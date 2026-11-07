@@ -1,0 +1,10 @@
+{
+  "name": "frama-auto-demo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Web estática responsive de FRAMA AUTO con catálogo JSON y fichas de vehículos",
+  "type": "module",
+  "scripts": {"dev": "node dev-server.mjs", "test": "node tests/validate.mjs"},
+  "engines": {"node": ">=18"},
+  "license": "UNLICENSED"
+}

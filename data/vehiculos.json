@@ -1,0 +1,371 @@
+[
+  {
+    "id": "bmw-serie-3-320d",
+    "marca": "BMW",
+    "modelo": "Serie 3 320d",
+    "version": "M Sport",
+    "anio": 2022,
+    "kilometros": 58200,
+    "precio": 34900,
+    "combustible": "Diésel",
+    "cambio": "Automático",
+    "carroceria": "Berlina",
+    "color": "Gris grafito",
+    "plazas": 5,
+    "puertas": 4,
+    "potenciaCV": 190,
+    "cilindradaCC": 1995,
+    "consumoL100": 4.9,
+    "emisionesGKm": 128,
+    "etiqueta": "C",
+    "traccion": "Trasera",
+    "transmision": "8 velocidades",
+    "ubicacion": "Importación bajo pedido",
+    "destacado": true,
+    "descripcion": "Berlina premium equilibrada, con estética deportiva y equipamiento pensado para viajar con comodidad. Ejemplo ilustrativo de catálogo.",
+    "equipamiento": [
+      "Paquete M Sport",
+      "Faros LED",
+      "Sensores de aparcamiento",
+      "Cámara trasera",
+      "Navegador",
+      "Climatizador bizona",
+      "Control de crucero",
+      "Llantas de aleación",
+      "Apple CarPlay / Android Auto"
+    ],
+    "imagenes": [
+      {
+        "tipo": "Principal",
+        "src": "assets/bmw-1.webp"
+      },
+      {
+        "tipo": "Frontal",
+        "src": "assets/bmw-2.webp"
+      },
+      {
+        "tipo": "Trasera",
+        "src": "assets/bmw-3.webp"
+      },
+      {
+        "tipo": "Lateral",
+        "src": "assets/bmw-3.webp"
+      },
+      {
+        "tipo": "Interior",
+        "src": "assets/interior.webp"
+      },
+      {
+        "tipo": "Volante",
+        "src": "assets/detalle.webp"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-clase-c-220d",
+    "marca": "Mercedes-Benz",
+    "modelo": "Clase C 220d",
+    "version": "AMG Line",
+    "anio": 2021,
+    "kilometros": 64500,
+    "precio": 36500,
+    "combustible": "Diésel",
+    "cambio": "Automático",
+    "carroceria": "Berlina",
+    "color": "Negro obsidiana",
+    "plazas": 5,
+    "puertas": 4,
+    "potenciaCV": 200,
+    "cilindradaCC": 1993,
+    "consumoL100": 4.8,
+    "emisionesGKm": 127,
+    "etiqueta": "ECO",
+    "traccion": "Trasera",
+    "transmision": "9 velocidades",
+    "ubicacion": "Importación bajo pedido",
+    "destacado": true,
+    "descripcion": "Diseño elegante, conducción refinada y una cabina orientada al confort. Ficha con datos demostrativos.",
+    "equipamiento": [
+      "AMG Line",
+      "Faros LED de alto rendimiento",
+      "Cámara de marcha atrás",
+      "Asientos calefactables",
+      "Pantalla multimedia",
+      "Climatizador bizona",
+      "Paquete aparcamiento",
+      "Control de crucero",
+      "Volante multifunción"
+    ],
+    "imagenes": [
+      {
+        "tipo": "Principal",
+        "src": "assets/mercedes-1.webp"
+      },
+      {
+        "tipo": "Frontal",
+        "src": "assets/mercedes-2.webp"
+      },
+      {
+        "tipo": "Trasera",
+        "src": "assets/mercedes-3.webp"
+      },
+      {
+        "tipo": "Lateral",
+        "src": "assets/mercedes-3.webp"
+      },
+      {
+        "tipo": "Interior",
+        "src": "assets/interior.webp"
+      },
+      {
+        "tipo": "Volante",
+        "src": "assets/detalle.webp"
+      }
+    ]
+  },
+  {
+    "id": "audi-a4-35-tdi",
+    "marca": "Audi",
+    "modelo": "A4 35 TDI",
+    "version": "S line",
+    "anio": 2023,
+    "kilometros": 30700,
+    "precio": 32900,
+    "combustible": "Diésel",
+    "cambio": "Automático",
+    "carroceria": "Berlina",
+    "color": "Azul mito",
+    "plazas": 5,
+    "puertas": 4,
+    "potenciaCV": 163,
+    "cilindradaCC": 1968,
+    "consumoL100": 4.6,
+    "emisionesGKm": 121,
+    "etiqueta": "ECO",
+    "traccion": "Delantera",
+    "transmision": "7 velocidades",
+    "ubicacion": "Importación bajo pedido",
+    "destacado": true,
+    "descripcion": "Tecnología, acabados cuidados y un planteamiento versátil para el uso diario. Vehículo ficticio de muestra.",
+    "equipamiento": [
+      "Acabado S line",
+      "Cuadro digital",
+      "Faros LED",
+      "Sensores delanteros y traseros",
+      "Cámara de aparcamiento",
+      "Navegación",
+      "Asientos deportivos",
+      "Climatizador",
+      "Control de crucero adaptativo"
+    ],
+    "imagenes": [
+      {
+        "tipo": "Principal",
+        "src": "assets/audi-1.webp"
+      },
+      {
+        "tipo": "Frontal",
+        "src": "assets/audi-2.webp"
+      },
+      {
+        "tipo": "Trasera",
+        "src": "assets/audi-3.webp"
+      },
+      {
+        "tipo": "Lateral",
+        "src": "assets/audi-3.webp"
+      },
+      {
+        "tipo": "Interior",
+        "src": "assets/interior.webp"
+      },
+      {
+        "tipo": "Volante",
+        "src": "assets/detalle.webp"
+      }
+    ]
+  },
+  {
+    "id": "volkswagen-golf-gti",
+    "marca": "Volkswagen",
+    "modelo": "Golf GTI",
+    "version": "DSG",
+    "anio": 2022,
+    "kilometros": 41800,
+    "precio": 28900,
+    "combustible": "Gasolina",
+    "cambio": "Automático",
+    "carroceria": "Compacto",
+    "color": "Gris antracita",
+    "plazas": 5,
+    "puertas": 5,
+    "potenciaCV": 245,
+    "cilindradaCC": 1984,
+    "consumoL100": 7.0,
+    "emisionesGKm": 159,
+    "etiqueta": "C",
+    "traccion": "Delantera",
+    "transmision": "7 velocidades",
+    "ubicacion": "Importación bajo pedido",
+    "destacado": false,
+    "descripcion": "Compacto deportivo para quienes buscan dinamismo y practicidad. Datos de ejemplo, sin relación con un vehículo disponible.",
+    "equipamiento": [
+      "Asientos deportivos",
+      "Cambio DSG",
+      "Faros LED",
+      "Apple CarPlay",
+      "Climatizador",
+      "Sensores de aparcamiento",
+      "Control de crucero",
+      "Volante deportivo"
+    ],
+    "imagenes": [
+      {
+        "tipo": "Principal",
+        "src": "assets/mercedes-2.webp"
+      },
+      {
+        "tipo": "Frontal",
+        "src": "assets/mercedes-1.webp"
+      },
+      {
+        "tipo": "Trasera",
+        "src": "assets/mercedes-3.webp"
+      },
+      {
+        "tipo": "Lateral",
+        "src": "assets/lateral.webp"
+      },
+      {
+        "tipo": "Interior",
+        "src": "assets/interior.webp"
+      },
+      {
+        "tipo": "Volante",
+        "src": "assets/detalle.webp"
+      }
+    ]
+  },
+  {
+    "id": "audi-q5-40-tdi",
+    "marca": "Audi",
+    "modelo": "Q5 40 TDI",
+    "version": "quattro",
+    "anio": 2023,
+    "kilometros": 27300,
+    "precio": 44900,
+    "combustible": "Diésel",
+    "cambio": "Automático",
+    "carroceria": "SUV",
+    "color": "Gris Daytona",
+    "plazas": 5,
+    "puertas": 5,
+    "potenciaCV": 204,
+    "cilindradaCC": 1968,
+    "consumoL100": 6.1,
+    "emisionesGKm": 161,
+    "etiqueta": "ECO",
+    "traccion": "Total",
+    "transmision": "7 velocidades",
+    "ubicacion": "Importación bajo pedido",
+    "destacado": false,
+    "descripcion": "SUV amplio con tracción total y perfil familiar. Vehículo de demostración, no representa una unidad real.",
+    "equipamiento": [
+      "Tracción quattro",
+      "Audi virtual cockpit",
+      "Faros LED",
+      "Cámara trasera",
+      "Navegador",
+      "Asientos calefactables",
+      "Climatizador trizona",
+      "Portón eléctrico"
+    ],
+    "imagenes": [
+      {
+        "tipo": "Principal",
+        "src": "assets/audi-2.webp"
+      },
+      {
+        "tipo": "Frontal",
+        "src": "assets/audi-1.webp"
+      },
+      {
+        "tipo": "Trasera",
+        "src": "assets/audi-3.webp"
+      },
+      {
+        "tipo": "Lateral",
+        "src": "assets/lateral.webp"
+      },
+      {
+        "tipo": "Interior",
+        "src": "assets/interior.webp"
+      },
+      {
+        "tipo": "Volante",
+        "src": "assets/detalle.webp"
+      }
+    ]
+  },
+  {
+    "id": "bmw-x3-xdrive20d",
+    "marca": "BMW",
+    "modelo": "X3 xDrive20d",
+    "version": "M Sport",
+    "anio": 2021,
+    "kilometros": 72600,
+    "precio": 38900,
+    "combustible": "Diésel",
+    "cambio": "Automático",
+    "carroceria": "SUV",
+    "color": "Negro zafiro",
+    "plazas": 5,
+    "puertas": 5,
+    "potenciaCV": 190,
+    "cilindradaCC": 1995,
+    "consumoL100": 5.8,
+    "emisionesGKm": 153,
+    "etiqueta": "ECO",
+    "traccion": "Total",
+    "transmision": "8 velocidades",
+    "ubicacion": "Importación bajo pedido",
+    "destacado": false,
+    "descripcion": "SUV cómodo con versatilidad para carretera y trayectos cotidianos. Precio y equipamiento meramente ilustrativos.",
+    "equipamiento": [
+      "Paquete M Sport",
+      "Tracción xDrive",
+      "Faros LED",
+      "Sensores",
+      "Cámara trasera",
+      "Asientos deportivos",
+      "Navegador",
+      "Climatizador automático"
+    ],
+    "imagenes": [
+      {
+        "tipo": "Principal",
+        "src": "assets/bmw-3.webp"
+      },
+      {
+        "tipo": "Frontal",
+        "src": "assets/bmw-1.webp"
+      },
+      {
+        "tipo": "Trasera",
+        "src": "assets/bmw-2.webp"
+      },
+      {
+        "tipo": "Lateral",
+        "src": "assets/lateral.webp"
+      },
+      {
+        "tipo": "Interior",
+        "src": "assets/interior.webp"
+      },
+      {
+        "tipo": "Volante",
+        "src": "assets/detalle.webp"
+      }
+    ]
+  }
+]
