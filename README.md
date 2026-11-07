@@ -45,13 +45,21 @@ assets/                Logo, portada y fotos ilustrativas
 css/styles.css         Estilos responsive
 js/app.js              UI, filtros, tarjetas, fichas y galerías
 js/data-provider.js    Capa de acceso a datos
- data/vehiculos.json    Inventario de ejemplo
- db/schema.sql          Propuesta PostgreSQL (no implementada)
- docs/                  Contrato de permisos y plan de migración
- tests/validate.mjs     Validación básica del catálogo
- index.html             Entrada única
+data/vehiculos.json    Inventario de ejemplo
+db/schema.sql          Propuesta PostgreSQL (no implementada)
+docs/                  Contrato de permisos y plan de migración
+tests/validate.mjs     Validación básica del catálogo
+index.html             Entrada única
 ```
 
 ## Pendiente antes de producción
 
 Información real de contacto, disponibilidad, condiciones de venta, textos legales y privacidad, fotos y fichas de unidades reales, registro de marca, persistencia, API, autenticación, RBAC validado en servidor y auditoría.
+
+### GitHub Pages
+
+Este proyecto está publicado en la rama `main` de [javidei/frama-auto](https://github.com/javidei/frama-auto), desde la carpeta raíz (`/`).
+
+URL prevista de GitHub Pages: **https://javidei.github.io/frama-auto/**. La primera publicación puede requerir que GitHub complete su despliegue.
+
+Para actualizarlo, revisa los cambios en una rama o haz commits en `main` desde GitHub o Git local. No contiene backend ni secretos.
