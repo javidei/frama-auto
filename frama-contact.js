@@ -48,7 +48,7 @@ async function refreshVehicleOptions(){
     const cars=await res.json();
     if(!Array.isArray(cars))return;
     lastVehicles=cars;
-    const existing=[...select.options].filter(o=>o.value).map(o=>({value:o.value,label:o.textContent.replace(/\\s*[·-]\\s*ejemplo\\s*$/i,"").trim()}));
+    const existing=[...select.options].filter(o=>o.value).map(o=>({value:o.value,label:o.textContent.replace(/\s*[·-]\s*ejemplo\s*$/i,"").trim()}));
     const items=new Map(existing.map(item=>[item.label.toLocaleLowerCase("es"),item]));
     for(const car of cars){
       const name=[car.brand,car.model,car.trim].filter(Boolean).join(" ").trim();
@@ -69,7 +69,7 @@ function setupForm(){
  const original=section.querySelector("form");
  if(!original||original.dataset.framaContact==="true")return;
  const options=[...original.querySelectorAll("select option")].map(x=>({value:x.value,label:x.textContent||""}));
- const menu=[{value:"",label:"Una importación a medida"},...options.filter(x=>x.value).map(x=>({value:x.value,label:x.label.replace(/\\s*[·-]\\s*ejemplo\\s*$/i,"").trim()}))];
+ const menu=[{value:"",label:"Una importación a medida"},...options.filter(x=>x.value).map(x=>({value:x.value,label:x.label.replace(/\s*[·-]\s*ejemplo\s*$/i,"").trim()}))];
  const form=document.createElement("form");
  form.className="frama-contact-form";
  form.dataset.framaContact="true";
