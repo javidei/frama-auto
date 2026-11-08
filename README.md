@@ -157,3 +157,15 @@ Próximo incremento: **0.1.4**.
 - La interfaz de desarrollo marca la publicación automática en curso mientras se realiza la prueba visual con una edición real.
 
 Próximo incremento: **0.1.5**.
+
+
+## v0.1.5 · Confirmación visual de guardado
+
+- Al crear o editar un vehículo, el panel muestra un diálogo modal de éxito **solo después** de guardar ficha y galería en Supabase.
+- El diálogo indica el coche y el estado (publicado, borrador, archivado o demo), y permite **Aceptar** o **Ver ficha pública** cuando corresponde.
+- No aparece en caso de error. La ventana no modifica el resultado del guardado, solo lo comunica.
+- CSS responsive y diálogo accesible con etiqueta y descripción; se cierra con Aceptar o Escape.
+- El script de administración se carga con `?v=0.1.5` para evitar conservar en caché la versión anterior.
+- Se añade la tarea completada al TO DO: 12 hechas, 5 en curso, 7 pendientes (24 en total).
+
+Próximo incremento: **0.1.6**.

@@ -1,5 +1,14 @@
 # Historial de versiones · FRAMA AUTO
 
+## 0.1.5 — 8 de noviembre de 2026
+
+- Ventana modal de confirmación para altas y modificaciones de vehículos.
+- Confirmación solo si Supabase devuelve guardado completo de ficha y galería.
+- Botón para abrir la ficha pública únicamente para vehículos publicados y no demo.
+- Refresco del script y estilos de administración para evitar versiones antiguas en caché.
+- Seguimiento de desarrollo actualizado: 12 hechas, 5 en curso y 7 pendientes.
+
+
 ## 0.1.4 — 8 de noviembre de 2026
 
 - Conectado el catálogo público de vehículos reales a la lectura anónima de Supabase, limitada por RLS a registros publicados y no demo.
@@ -40,6 +49,6 @@
 - Botón flotante de WhatsApp con número ficticio reservado, para probar la apariencia y el enlace. Antes de ofrecer atención debe reemplazarse por el teléfono real.
 - Supabase Free: advertencia de posible pausa por actividad insuficiente durante un período de siete días.
 
-**Siguiente cambio:** incrementar a 0.1.5.
+**Siguiente cambio:** incrementar a 0.1.6.
 
 El JSON sigue siendo el origen del catálogo. La base de datos, el login y las operaciones administrativas no están implementados.

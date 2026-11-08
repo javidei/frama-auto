@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "updated_at": "2026-11-08",
   "groups": [
     {
@@ -76,6 +76,11 @@
         {
           "title": "Formulario de alta",
           "description": "Campos, imágenes, vista previa y exportación JSON.",
+          "status": "hecho"
+        },
+        {
+          "title": "Confirmación al guardar",
+          "description": "Ventana de éxito tras guardar la ficha y fotografías, con acceso a la ficha publicada.",
           "status": "hecho"
         },
         {

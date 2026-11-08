@@ -22,7 +22,7 @@ export default function AdministracionPage() {
       <p className="admin-lead">Gestión de vehículos y seguimiento de tareas completadas, en curso y pendientes.</p>
       <div className="admin-meta"><span>Versión {todo.version}</span><span>Actualizado 08/11/2026</span><span>Seguimiento de desarrollo</span></div>
     </header>
-    <section id="frama-vehicle-editor" aria-labelledby="vf-title"><p>Cargando administración de FRAMA AUTO…</p></section><script defer src="/frama-admin-console.js"></script>
+    <section id="frama-vehicle-editor" aria-labelledby="vf-title"><p>Cargando administración de FRAMA AUTO…</p></section><script defer src="/frama-admin-console.js?v=0.1.5"></script>
     <section className="admin-notice" aria-label="Estado actual del área">
       <h2>Estado real del catálogo</h2>
       <p>Existe código de login y edición conectado a Supabase, pero faltan pruebas completas. La web pública consulta los vehículos publicados de Supabase y sus fotografías. Queda comprobar el flujo completo de guardar y ver la actualización.</p>

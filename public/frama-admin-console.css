@@ -50,3 +50,18 @@
 #frama-vehicle-editor [hidden]{display:none!important}
 @media(max-width:950px){#frama-vehicle-editor .fa-form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#frama-vehicle-editor .fa-photos{grid-template-columns:1fr}}
 @media(max-width:650px){#frama-vehicle-editor{margin:20px 0 30px}#frama-vehicle-editor .fa-card{padding:17px}#frama-vehicle-editor .fa-item{display:block}#frama-vehicle-editor .fa-item button{margin-top:12px}#frama-vehicle-editor .fa-form-grid,#frama-vehicle-editor .fa-addphoto{grid-template-columns:1fr}#frama-vehicle-editor .fa-photo{grid-template-columns:1fr}#frama-vehicle-editor .fa-preview{height:180px}#frama-vehicle-editor .fa-toolbar button{flex:1 1 auto}}
+
+/* FRAMA AUTO 0.1.5: confirmación de guardado accesible */
+.fa-success-dialog{position:fixed;inset:0;box-sizing:border-box;width:min(470px,calc(100vw - 32px));max-width:470px;max-height:calc(100dvh - 32px);overflow:auto;margin:auto;padding:0;border:1px solid #78613b;border-radius:16px;background:#161a1e;color:#eeeae2;box-shadow:0 28px 85px #000b;font:14px/1.55 Arial,Helvetica,sans-serif}
+.fa-success-dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}
+.fa-success-body{padding:32px 30px 27px;text-align:center}
+.fa-success-icon{width:64px;height:64px;margin:0 auto 19px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#153e29;border:2px solid #4abe79;color:#83f1ac;font:700 34px Arial,sans-serif}
+.fa-success-dialog h2{margin:0 0 8px;font:400 29px/1.22 Georgia,serif;color:#f6eedc}
+.fa-success-vehicle{margin:0 0 14px;font-weight:700;color:#e8ca8d;font-size:15px}
+.fa-success-dialog #fa-success-description{color:#c3c7c6;margin:0 0 28px;font-size:13px;line-height:1.7}
+.fa-success-actions{display:flex;gap:11px;flex-wrap:wrap;align-items:center;justify-content:center}
+.fa-success-actions button,.fa-success-actions a{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;border-radius:8px;font:700 12px/1.3 Arial,Helvetica,sans-serif;cursor:pointer}
+.fa-success-ok{background:linear-gradient(100deg,#ead29d,#c49d5a);border:1px solid #c49d5a;color:#19130c}
+.fa-success-view{color:#e8d1a0;background:#302719;border:1px solid #917447;text-decoration:none}
+.fa-success-dialog :focus-visible{outline:2px solid #d9b875;outline-offset:3px}
+@media(max-width:520px){.fa-success-body{padding:26px 19px 22px}.fa-success-dialog h2{font-size:25px}.fa-success-actions{flex-direction:column}.fa-success-actions button,.fa-success-actions a{width:100%}}
