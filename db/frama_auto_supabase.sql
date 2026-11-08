@@ -102,6 +102,10 @@ alter table public.frama_user_roles enable row level security;
 alter table public.frama_vehicles enable row level security;
 alter table public.frama_vehicle_photos enable row level security;
 
+-- Sobrescribir posibles permisos por defecto del esquema public antes de autorizar columnas.
+revoke all on public.frama_user_roles from public, anon, authenticated;
+revoke all on public.frama_vehicles from public, anon, authenticated;
+revoke all on public.frama_vehicle_photos from public, anon, authenticated;
 grant select on public.frama_user_roles to authenticated;
 grant insert,update,delete on public.frama_user_roles to authenticated;
 grant select on public.frama_vehicles to anon,authenticated;
