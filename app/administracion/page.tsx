@@ -34,7 +34,7 @@ export default function AdministracionPage() {
     </section>
     <section aria-labelledby="backlog-title">
       <p className="admin-eyebrow">PLAN DE TRABAJO</p>
-      <h2 id="backlog-title">Próximos desarrollos</h2>
+      <h2 id="backlog-title">TO DO de desarrollo</h2>
       <div className="admin-progress" aria-label="Resumen de tareas"><div><strong>{completed} / {count}</strong><span>Completadas</span></div><div><strong>{inProgress}</strong><span>En curso</span></div><div><strong>{percentage}%</strong><span>Progreso terminado</span></div></div>
       <div className="admin-roadmap">{groups.map(group => <section className="admin-group" key={group.title}><h2>{group.title}</h2><p className="admin-group-intro">{group.description}</p>{group.tasks.map(task => <div className={"admin-task admin-task-" + task.status} key={task.title}><span aria-hidden="true" className="admin-task-circle"/><div><strong>{task.title}</strong><span>{task.description}</span></div><span className={"admin-task-status admin-task-status-" + task.status}>{labels[task.status]}</span></div>)}</section>)}</div>
     </section>
