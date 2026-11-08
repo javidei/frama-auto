@@ -1,13 +1,13 @@
-/* FRAMA AUTO v0.1.3 · compatibilidad con export estático de GitHub Pages.
+/* FRAMA AUTO v0.1.4 · compatibilidad con export estático de GitHub Pages.
    El número WhatsApp es ficticio (rango 555 reservado para ejemplos).
-   No hay login, escrituras administrativas ni conexión a base de datos. */
+   La administración usa Supabase; los datos públicos se consultan con acceso de solo lectura. */
 (() => {
   "use strict";
   if(!document.querySelector('script[src$="/pwa-register.js"]')){
     const base=location.pathname==="/frama-auto"||location.pathname.startsWith("/frama-auto/")?"/frama-auto":"";
     const script=document.createElement("script");script.src=base+"/pwa-register.js";script.defer=true;document.head.append(script);
   }
-  const VERSION = "0.1.3";
+  const VERSION = "0.1.4";
   const TEST_PHONE = "12025550148";
   const base = location.pathname === "/frama-auto" || location.pathname.startsWith("/frama-auto/") ? "/frama-auto" : "";
   const message = encodeURIComponent("Hola, he visto FRAMA AUTO y quiero información sobre un vehículo.");
@@ -15,6 +15,7 @@
 
   // Sección histórica: se monta en la exportación previa sin alterar la hidratación de Next.
   function addSoldVehicle() {
+    if(window.FRAMA_LIVE_ACTIVE)return;
     const catalog = document.getElementById("catalogo");
     if (!catalog || document.getElementById("vendidos")) return;
     if (!document.getElementById("frama-sold-style")) {

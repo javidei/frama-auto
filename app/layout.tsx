@@ -11,5 +11,5 @@ export const metadata: Metadata = {
  appleWebApp: { capable:true,title:"FRAMA AUTO",statusBarStyle:"black-translucent" }
 };
 export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){
- return <html lang="es"><body><a href="#contenido" className="skip-link">Saltar al contenido</a><Header/>{children}<Footer/><WhatsappFloating/><script src="/pwa-register.js" defer/></body></html>;
+ return <html lang="es"><body><a href="#contenido" className="skip-link">Saltar al contenido</a><Header/>{children}<Footer/><WhatsappFloating/><script src="/pwa-register.js" defer/><script src="/frama-live-catalog.js" defer/></body></html>;
 }

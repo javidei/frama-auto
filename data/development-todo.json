@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "updated_at": "2026-11-08",
   "groups": [
     {
@@ -33,8 +33,8 @@
         },
         {
           "title": "Publicación automática desde el panel",
-          "description": "Conectar las altas reales con la web pública.",
-          "status": "pendiente"
+          "description": "La web pública ya consulta registros publicados de Supabase; falta una prueba visual completa del flujo guardar → ficha.",
+          "status": "en_curso"
         }
       ]
     },

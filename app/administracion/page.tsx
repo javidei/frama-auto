@@ -25,7 +25,7 @@ export default function AdministracionPage() {
     <section id="frama-vehicle-editor" aria-labelledby="vf-title"><p>Cargando administración de FRAMA AUTO…</p></section><script defer src="/frama-admin-console.js"></script>
     <section className="admin-notice" aria-label="Estado actual del área">
       <h2>Estado real del catálogo</h2>
-      <p>Existe código de login y edición conectado a Supabase, pero faltan pruebas completas. La web pública todavía obtiene sus vehículos del JSON: las altas de la base de datos no se publican automáticamente.</p>
+      <p>Existe código de login y edición conectado a Supabase, pero faltan pruebas completas. La web pública consulta los vehículos publicados de Supabase y sus fotografías. Queda comprobar el flujo completo de guardar y ver la actualización.</p>
     </section>
     <section className="admin-notice" aria-label="Condiciones de Supabase Free">
       <h2>Primera fase con Supabase Free</h2>

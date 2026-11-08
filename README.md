@@ -143,3 +143,17 @@ Archivos de interfaz: \`public/admin-vehicle-form.js\` y \`public/admin-vehicle-
 - Las próximas tareas deben actualizar el JSON de desarrollo y regenerar la versión estática de la ruta.
 
 Próximo incremento: **0.1.4**.
+
+
+## v0.1.4 · Catálogo público conectado a Supabase
+
+- Diagnóstico: las modificaciones desde administración se guardaban en Supabase pero la web pública mostraba un JSON/HTML antiguo.
+- Ahora `frama-live-catalog.js` consulta tablas `frama_vehicles` y `frama_vehicle_photos` con clave **publicable**; RLS solo permite leer vehículos `published` no demo y sus fotografías. Nunca incluir tokens administrativos en la web pública.
+- El `index.html` de GitHub Pages carga este script y muestra vehículos vendidos o disponibles según su estado actual. Los tres ejemplos de JSON se conservan por separado.
+- La ruta antigua del Golf se actualiza también en tiempo de ejecución, y `/ficha/?slug=...` sirve para cualquier vehículo nuevo que se publique desde administración.
+- Para cambios de publicación, archivar o vender no hace falta un nuevo despliegue del HTML. Borradores y archivos no se muestran en la lectura pública.
+- Si falla la red se informa de la imposibilidad de consultar los datos, sin simular un guardado correctamente reflejado.
+- La siguiente exportación estática debe incluir `/ficha/`, el script y la hoja de estilos públicos. Están incluidos en `app/layout.tsx`, `public/` y `scripts/export-pages.mjs`.
+- La interfaz de desarrollo marca la publicación automática en curso mientras se realiza la prueba visual con una edición real.
+
+Próximo incremento: **0.1.5**.

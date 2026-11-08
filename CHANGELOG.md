@@ -1,5 +1,15 @@
 # Historial de versiones · FRAMA AUTO
 
+## 0.1.4 — 8 de noviembre de 2026
+
+- Conectado el catálogo público de vehículos reales a la lectura anónima de Supabase, limitada por RLS a registros publicados y no demo.
+- La sección de vendidos y el stock público se actualizan al cargar, sin cambiar el JSON ni reconstruir la web.
+- La ficha del Volkswagen Golf ahora carga descripción, equipamiento, características y fotografías desde Supabase.
+- Añadida una ficha genérica `/ficha/?slug=...` para vehículos que se creen desde administración.
+- El panel avisa de que los datos publicados son visibles y comunica modificaciones entre pestañas.
+- TO DO de publicación automática pasa a en curso hasta su validación visual en producción.
+
+
 ## 0.1.3 — 8 de noviembre de 2026
 
 - Revisión del TO DO: 11 tareas completadas, 4 en curso y 8 pendientes.
@@ -30,6 +40,6 @@
 - Botón flotante de WhatsApp con número ficticio reservado, para probar la apariencia y el enlace. Antes de ofrecer atención debe reemplazarse por el teléfono real.
 - Supabase Free: advertencia de posible pausa por actividad insuficiente durante un período de siete días.
 
-**Siguiente cambio:** incrementar a 0.1.4.
+**Siguiente cambio:** incrementar a 0.1.5.
 
 El JSON sigue siendo el origen del catálogo. La base de datos, el login y las operaciones administrativas no están implementados.

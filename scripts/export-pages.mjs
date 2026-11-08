@@ -22,7 +22,7 @@ writeFileSync(path.join(stage, 'tsconfig.json'), JSON.stringify({compilerOptions
 
 // Plain anchors and public assets require an explicit repository prefix on GitHub Pages.
 function prefix(content) {
-  return content.replace(/(["'`])\/(images\/|icons\/|vehiculos\/|#|\?|informacion|administracion|favicon\.svg|manifest\.webmanifest|pwa-register\.js|sw\.js|admin-vehicle-form\.js|admin-vehicle-form\.css)/g, (_, quote, suffix) => `${quote}${basePath}/${suffix}`)
+  return content.replace(/(["'`])\/(images\/|icons\/|vehiculos\/|#|\?|informacion|administracion|ficha\/|frama-live-catalog\.js|frama-live-catalog\.css|favicon\.svg|manifest\.webmanifest|pwa-register\.js|sw\.js|admin-vehicle-form\.js|admin-vehicle-form\.css)/g, (_, quote, suffix) => `${quote}${basePath}/${suffix}`)
     .replace(/(["'`])\/\1/g, (_, quote) => `${quote}${basePath}/${quote}`);
 }
 function walk(dir, callback) { for (const name of readdirSync(dir)) { const file=path.join(dir,name); if(statSync(file).isDirectory()) walk(file,callback); else callback(file); } }
@@ -43,7 +43,7 @@ if(result.error) throw result.error;
 if(result.status !== 0) process.exit(result.status ?? 1);
 const output=path.join(stage,'out');
 writeFileSync(path.join(output,'.nojekyll'),'');
-const expected=['index.html','404.html','informacion/index.html','administracion/index.html','vehiculos/mercedes-benz-c200/index.html','vehiculos/bmw-320d/index.html','vehiculos/audi-q3-35-tfsi/index.html','vehiculos/volkswagen-golf-gti-mk6-adidas/index.html'];
+const expected=['index.html','404.html','informacion/index.html','administracion/index.html','ficha/index.html','vehiculos/mercedes-benz-c200/index.html','vehiculos/bmw-320d/index.html','vehiculos/audi-q3-35-tfsi/index.html','vehiculos/volkswagen-golf-gti-mk6-adidas/index.html'];
 for(const name of expected) if(!existsSync(path.join(output,name))) throw new Error(`Missing exported route: ${name}`);
 walk(output,file=>{ if(file.endsWith('.html')) { const html=readFileSync(file,'utf8'); for(const match of html.matchAll(/(?:src|href)="(\/[^"?#]*)/g)){const url=match[1];if(!url.startsWith(basePath+'/'))throw new Error(`Unprefixed URL: ${url}`);const local=decodeURIComponent(url.slice(basePath.length+1));if(local && !existsSync(path.join(output,local)))throw new Error(`Missing local asset: ${local}`);}} });
 // Root is the existing Pages publishing source. Copy generated files beside the full source.
