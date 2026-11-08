@@ -43,7 +43,7 @@ if(result.error) throw result.error;
 if(result.status !== 0) process.exit(result.status ?? 1);
 const output=path.join(stage,'out');
 writeFileSync(path.join(output,'.nojekyll'),'');
-const expected=['index.html','404.html','informacion/index.html','administracion/index.html','vehiculos/mercedes-benz-c200/index.html','vehiculos/bmw-320d/index.html','vehiculos/audi-q3-35-tfsi/index.html'];
+const expected=['index.html','404.html','informacion/index.html','administracion/index.html','vehiculos/mercedes-benz-c200/index.html','vehiculos/bmw-320d/index.html','vehiculos/audi-q3-35-tfsi/index.html','vehiculos/volkswagen-golf-gti-mk6-adidas/index.html'];
 for(const name of expected) if(!existsSync(path.join(output,name))) throw new Error(`Missing exported route: ${name}`);
 walk(output,file=>{ if(file.endsWith('.html')) { const html=readFileSync(file,'utf8'); for(const match of html.matchAll(/(?:src|href)="(\/[^"?#]*)/g)){const url=match[1];if(!url.startsWith(basePath+'/'))throw new Error(`Unprefixed URL: ${url}`);const local=decodeURIComponent(url.slice(basePath.length+1));if(local && !existsSync(path.join(output,local)))throw new Error(`Missing local asset: ${local}`);}} });
 // Root is the existing Pages publishing source. Copy generated files beside the full source.

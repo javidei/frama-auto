@@ -19,3 +19,29 @@
 .admin-page{padding-block:70px 96px;min-height:65vh;background:radial-gradient(ellipse at 85% 0%,#45361c35,transparent 42%),var(--bg)}.admin-heading{max-width:900px}.admin-heading h1{font-size:clamp(43px,6vw,74px);margin:12px 0 18px}.admin-lead{font-size:15px;max-width:680px}.admin-eyebrow{display:flex;gap:10px;align-items:center;color:var(--gold);font-size:11px;letter-spacing:2px;font-weight:700}.admin-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.admin-meta span{border:1px solid #4d452e;color:var(--gold-light);background:#1a1711;padding:7px 12px;border-radius:100px;font-size:11px}.admin-notice{border:1px solid #77613c;background:#d6b36c0d;border-radius:9px;padding:22px 26px;display:grid;gap:10px;margin:32px 0 48px}.admin-notice h2{font-size:24px;margin:0}.admin-notice p{margin:0;font-size:13px;line-height:1.8}.admin-notice a,.admin-action{color:var(--gold-light);text-decoration:underline;text-underline-offset:4px}.admin-progress{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:21px 0;margin-bottom:48px}.admin-progress strong{display:block;color:var(--gold);font-size:29px;line-height:1.1}.admin-progress span{font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}.admin-roadmap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}.admin-group{background:#141619;border:1px solid #2b2e2f;border-radius:9px;padding:30px}.admin-group h2{font:600 20px Arial,Helvetica,sans-serif;letter-spacing:0;margin:0 0 8px}.admin-group .admin-group-intro{font-size:12px;margin:0 0 25px;line-height:1.65}.admin-task{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-top:1px solid #2e2e30}.admin-task-circle{width:17px;height:17px;flex:none;border:1px solid #8c7449;border-radius:5px;margin-top:3px}.admin-task strong{font-size:12px;font-weight:600;display:block}.admin-task span{display:block;font-size:11px;color:var(--muted);line-height:1.6;margin-top:3px}.admin-task-status{margin-left:auto;white-space:nowrap;font-size:9px;color:var(--gold);background:#292216;border-radius:10px;padding:4px 8px}.admin-back{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;margin-top:38px}.admin-small{font-size:11px;color:#a6aaae;margin-top:30px}
 @media(max-width:760px){.footer-links{justify-content:flex-start;gap:10px 19px}.whatsapp-fab{bottom:14px;right:14px;width:58px;height:58px}.whatsapp-fab svg{width:35px;height:35px}.admin-page{padding-block:46px 80px}.admin-progress{grid-template-columns:repeat(3,minmax(0,1fr))}.admin-roadmap{grid-template-columns:1fr}.admin-group{padding:22px}.admin-task-status{display:none}.admin-notice{padding:20px}.admin-heading h1{font-size:42px}}
 @media(max-width:480px){.whatsapp-fab{padding:0}.whatsapp-fab span{font-size:11px}.admin-progress strong{font-size:25px}.admin-progress span{font-size:8px}}
+
+/* FRAMA AUTO 0.1.2 · vehículo histórico vendido y galería de fotografías reales */
+.car-image-real>img{position:absolute!important;left:0!important;top:0!important;width:100%!important;height:100%!important;max-width:100%;object-fit:cover}
+.lightbox-photo .car-image-real{aspect-ratio:auto;height:min(64dvh,680px);background:#0b0d10}
+.lightbox-photo .car-image-real>img{object-fit:contain}
+.sold-section{background:#101318;border-top:1px solid #302b25;border-bottom:1px solid #302b25}
+.sold-section .section-heading h2{max-width:630px}
+.sold-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:34px}
+.sold-vehicle-card{display:flex;min-height:290px;background:#191c20;border:1px solid #3c3730;border-radius:7px;overflow:hidden;transition:border-color .2s,transform .2s}
+.sold-vehicle-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.sold-vehicle-image{position:relative;width:48%;flex-shrink:0}
+.sold-vehicle-image .car-image{height:100%;aspect-ratio:auto}
+.sold-status,.sold-header-status{display:inline-flex;align-items:center;justify-content:center;border:1px solid #e3b75d;color:#e9c886;background:#17130fdf;padding:8px 13px;letter-spacing:1.4px;font-size:10px;font-weight:bold;border-radius:3px}
+.sold-status{position:absolute;left:13px;top:13px}
+.sold-vehicle-info{padding:26px 25px;display:flex;flex-direction:column;align-items:flex-start}
+.sold-vehicle-info .eyebrow{font-size:9px;letter-spacing:1px;margin-bottom:9px}
+.sold-vehicle-info h3{font:400 29px/1.15 Georgia,serif;letter-spacing:-.8px;margin:0 0 7px}
+.sold-vehicle-info p{font-size:12px;margin:0 0 20px}
+.sold-specs{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:#ded3be}
+.sold-cta{display:flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;margin-top:auto;padding-top:24px}
+.sold-summary h2{font:400 45px/1.1 Georgia,serif;color:var(--gold-light);margin:0 0 18px}
+.sold-summary>p:not(.eyebrow){font-size:13px;line-height:1.8}
+.sold-summary .summary-specs{margin:25px 0}
+.sold-detail .detail-heading{align-items:flex-end}
+@media(max-width:1050px){.sold-grid{grid-template-columns:1fr}.sold-vehicle-card{max-width:750px}}
+@media(max-width:760px){.sold-vehicle-card{flex-direction:column}.sold-vehicle-image{width:100%;height:260px}.sold-vehicle-info{min-height:245px}.sold-detail .detail-heading{align-items:flex-start}.sold-header-status{margin-top:12px}}

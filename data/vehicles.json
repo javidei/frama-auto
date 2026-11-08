@@ -1,5 +1,396 @@
 [
- {"id":"demo-mercedes-c200","slug":"mercedes-benz-c200","demo":true,"brand":"Mercedes-Benz","model":"Clase C 200","trim":"AMG Line · 9G-TRONIC","year":2022,"mileage":42500,"fuel":"Híbrido ligero","transmission":"Automático","body":"Berlina","price":38900,"power":204,"image":"/images/mercedes.png","description":"Una berlina de líneas elegantes y enfoque viajero. Este ejemplo combina un exterior negro con un interior cálido y una configuración automática, para mostrar cómo presentar una ficha de vehículo con información clara y una galería completa.","specs":{"Marca / modelo":"Mercedes-Benz · Clase C 200","Versión":"AMG Line · ejemplo","Primera matriculación":"06/2022 · ficticia","Kilometraje":"42.500 km · ficticio","Precio":"38.900 € · ficticio","Motor":"Gasolina + asistencia eléctrica 48 V","Cilindrada":"1.496 cm³ · orientativa","Potencia":"150 kW / 204 CV · orientativa","Cambio":"Automático · 9 relaciones","Tracción":"Trasera","Carrocería":"Berlina","Puertas / plazas":"4 / 5","Color exterior":"Negro obsidiana","Tapicería":"Cuero color coñac · ilustrativa","Consumo combinado":"6,6 l/100 km · orientativo","Emisiones CO₂":"150 g/km · orientativas","Normativa":"Euro 6 · por validar","Distintivo ambiental":"ECO · por validar en DGT","Dimensiones (largo × ancho × alto)":"4.751 × 1.820 × 1.438 mm · orientativas","Maletero":"455 litros · orientativo","Procedencia":"Alemania · ejemplo","Historial / documentación":"Sin historial real asociado a esta demo"},"equipment":{"Confort":["Asientos delanteros calefactados","Climatizador automático bizona","Iluminación ambiental","Acceso y arranque sin llave"],"Tecnología":["Pantalla central multimedia","Cuadro de instrumentos digital","Integración de smartphone","Cámara de marcha atrás"],"Seguridad":["Control de crucero","Sensores de aparcamiento","Asistente de mantenimiento de carril","Faros LED"]},"gallery":[{"slot":0,"label":"Vista principal"},{"slot":1,"label":"Frontal"},{"slot":2,"label":"Trasera"},{"slot":3,"label":"Lateral izquierdo"},{"slot":4,"label":"Lateral derecho"},{"slot":5,"label":"Interior"},{"slot":6,"label":"Salpicadero y volante"},{"slot":7,"label":"Plazas traseras"},{"slot":8,"label":"Llantas"}]},
- {"id":"demo-bmw-320d","slug":"bmw-320d","demo":true,"brand":"BMW","model":"Serie 3 320d","trim":"M Sport · Steptronic","year":2021,"mileage":58700,"fuel":"Diésel","transmission":"Automático","body":"Berlina","price":32900,"power":190,"image":"/images/bmw.png","description":"Una berlina de carácter deportivo para imaginar el día a día y los viajes. La configuración de ejemplo incorpora un exterior plateado, acabado de inspiración deportiva e interior negro. Todas las características son ilustrativas y no corresponden a una unidad a la venta.","specs":{"Marca / modelo":"BMW · Serie 3 320d","Versión":"M Sport · ejemplo","Primera matriculación":"09/2021 · ficticia","Kilometraje":"58.700 km · ficticio","Precio":"32.900 € · ficticio","Motor":"Diésel · 4 cilindros","Cilindrada":"1.995 cm³ · orientativa","Potencia":"140 kW / 190 CV · orientativa","Cambio":"Automático · 8 relaciones","Tracción":"Trasera","Carrocería":"Berlina","Puertas / plazas":"4 / 5","Color exterior":"Plata metalizado","Tapicería":"Cuero negro · ilustrativa","Consumo combinado":"4,8 l/100 km · orientativo","Emisiones CO₂":"128 g/km · orientativas","Normativa":"Euro 6 · por validar","Distintivo ambiental":"Por verificar según homologación","Dimensiones (largo × ancho × alto)":"4.709 × 1.827 × 1.435 mm · orientativas","Maletero":"480 litros · orientativo","Procedencia":"Alemania · ejemplo","Historial / documentación":"Sin historial real asociado a esta demo"},"equipment":{"Confort":["Asientos deportivos delanteros","Climatización automática","Volante multifunción","Portón con apertura asistida"],"Tecnología":["Sistema multimedia con navegación","Instrumentación digital","Conectividad de smartphone","Sensores de aparcamiento"],"Seguridad":["Faros LED","Control de crucero","Asistente de frenada","Reconocimiento de señales"]},"gallery":[{"slot":0,"label":"Vista principal"},{"slot":1,"label":"Frontal"},{"slot":2,"label":"Trasera"},{"slot":3,"label":"Lateral izquierdo"},{"slot":4,"label":"Lateral derecho"},{"slot":5,"label":"Interior"},{"slot":6,"label":"Salpicadero y volante"},{"slot":7,"label":"Plazas traseras"},{"slot":8,"label":"Llantas"}]},
- {"id":"demo-audi-q3","slug":"audi-q3-35-tfsi","demo":true,"brand":"Audi","model":"Q3 35 TFSI","trim":"S line · S tronic","year":2023,"mileage":28600,"fuel":"Gasolina","transmission":"Automático","body":"SUV","price":35900,"power":150,"image":"/images/audi.png","description":"Un SUV compacto para quienes imaginan una conducción versátil y una posición elevada. La configuración de muestra combina un acabado gris grafito con un interior oscuro. Esta ficha sirve para explorar el diseño del catálogo; no representa un vehículo disponible.","specs":{"Marca / modelo":"Audi · Q3 35 TFSI","Versión":"S line · ejemplo","Primera matriculación":"03/2023 · ficticia","Kilometraje":"28.600 km · ficticio","Precio":"35.900 € · ficticio","Motor":"Gasolina · 4 cilindros","Cilindrada":"1.498 cm³ · orientativa","Potencia":"110 kW / 150 CV · orientativa","Cambio":"Automático · 7 relaciones","Tracción":"Delantera","Carrocería":"SUV","Puertas / plazas":"5 / 5","Color exterior":"Gris grafito metalizado","Tapicería":"Negra · ilustrativa","Consumo combinado":"6,5 l/100 km · orientativo","Emisiones CO₂":"148 g/km · orientativas","Normativa":"Euro 6 · por validar","Distintivo ambiental":"C · por validar en DGT","Dimensiones (largo × ancho × alto)":"4.484 × 1.849 × 1.585 mm · orientativas","Maletero":"530 litros · orientativo","Procedencia":"Alemania · ejemplo","Historial / documentación":"Sin historial real asociado a esta demo"},"equipment":{"Confort":["Climatizador automático","Asientos delanteros ajustables","Volante multifunción","Banqueta trasera configurable"],"Tecnología":["Cuadro de instrumentos digital","Pantalla multimedia táctil","Integración de smartphone","Cámara de marcha atrás"],"Seguridad":["Faros LED","Control de crucero","Asistente de mantenimiento de carril","Sensores delanteros y traseros"]},"gallery":[{"slot":0,"label":"Vista principal"},{"slot":1,"label":"Frontal"},{"slot":2,"label":"Trasera"},{"slot":3,"label":"Lateral izquierdo"},{"slot":4,"label":"Lateral derecho"},{"slot":5,"label":"Interior"},{"slot":6,"label":"Salpicadero y volante"},{"slot":7,"label":"Plazas traseras"},{"slot":8,"label":"Llantas"}]}
+  {
+    "id": "demo-mercedes-c200",
+    "slug": "mercedes-benz-c200",
+    "demo": true,
+    "brand": "Mercedes-Benz",
+    "model": "Clase C 200",
+    "trim": "AMG Line · 9G-TRONIC",
+    "year": 2022,
+    "mileage": 42500,
+    "fuel": "Híbrido ligero",
+    "transmission": "Automático",
+    "body": "Berlina",
+    "price": 38900,
+    "power": 204,
+    "image": "/images/mercedes.png",
+    "description": "Una berlina de líneas elegantes y enfoque viajero. Este ejemplo combina un exterior negro con un interior cálido y una configuración automática, para mostrar cómo presentar una ficha de vehículo con información clara y una galería completa.",
+    "specs": {
+      "Marca / modelo": "Mercedes-Benz · Clase C 200",
+      "Versión": "AMG Line · ejemplo",
+      "Primera matriculación": "06/2022 · ficticia",
+      "Kilometraje": "42.500 km · ficticio",
+      "Precio": "38.900 € · ficticio",
+      "Motor": "Gasolina + asistencia eléctrica 48 V",
+      "Cilindrada": "1.496 cm³ · orientativa",
+      "Potencia": "150 kW / 204 CV · orientativa",
+      "Cambio": "Automático · 9 relaciones",
+      "Tracción": "Trasera",
+      "Carrocería": "Berlina",
+      "Puertas / plazas": "4 / 5",
+      "Color exterior": "Negro obsidiana",
+      "Tapicería": "Cuero color coñac · ilustrativa",
+      "Consumo combinado": "6,6 l/100 km · orientativo",
+      "Emisiones CO₂": "150 g/km · orientativas",
+      "Normativa": "Euro 6 · por validar",
+      "Distintivo ambiental": "ECO · por validar en DGT",
+      "Dimensiones (largo × ancho × alto)": "4.751 × 1.820 × 1.438 mm · orientativas",
+      "Maletero": "455 litros · orientativo",
+      "Procedencia": "Alemania · ejemplo",
+      "Historial / documentación": "Sin historial real asociado a esta demo"
+    },
+    "equipment": {
+      "Confort": [
+        "Asientos delanteros calefactados",
+        "Climatizador automático bizona",
+        "Iluminación ambiental",
+        "Acceso y arranque sin llave"
+      ],
+      "Tecnología": [
+        "Pantalla central multimedia",
+        "Cuadro de instrumentos digital",
+        "Integración de smartphone",
+        "Cámara de marcha atrás"
+      ],
+      "Seguridad": [
+        "Control de crucero",
+        "Sensores de aparcamiento",
+        "Asistente de mantenimiento de carril",
+        "Faros LED"
+      ]
+    },
+    "gallery": [
+      {
+        "slot": 0,
+        "label": "Vista principal"
+      },
+      {
+        "slot": 1,
+        "label": "Frontal"
+      },
+      {
+        "slot": 2,
+        "label": "Trasera"
+      },
+      {
+        "slot": 3,
+        "label": "Lateral izquierdo"
+      },
+      {
+        "slot": 4,
+        "label": "Lateral derecho"
+      },
+      {
+        "slot": 5,
+        "label": "Interior"
+      },
+      {
+        "slot": 6,
+        "label": "Salpicadero y volante"
+      },
+      {
+        "slot": 7,
+        "label": "Plazas traseras"
+      },
+      {
+        "slot": 8,
+        "label": "Llantas"
+      }
+    ]
+  },
+  {
+    "id": "demo-bmw-320d",
+    "slug": "bmw-320d",
+    "demo": true,
+    "brand": "BMW",
+    "model": "Serie 3 320d",
+    "trim": "M Sport · Steptronic",
+    "year": 2021,
+    "mileage": 58700,
+    "fuel": "Diésel",
+    "transmission": "Automático",
+    "body": "Berlina",
+    "price": 32900,
+    "power": 190,
+    "image": "/images/bmw.png",
+    "description": "Una berlina de carácter deportivo para imaginar el día a día y los viajes. La configuración de ejemplo incorpora un exterior plateado, acabado de inspiración deportiva e interior negro. Todas las características son ilustrativas y no corresponden a una unidad a la venta.",
+    "specs": {
+      "Marca / modelo": "BMW · Serie 3 320d",
+      "Versión": "M Sport · ejemplo",
+      "Primera matriculación": "09/2021 · ficticia",
+      "Kilometraje": "58.700 km · ficticio",
+      "Precio": "32.900 € · ficticio",
+      "Motor": "Diésel · 4 cilindros",
+      "Cilindrada": "1.995 cm³ · orientativa",
+      "Potencia": "140 kW / 190 CV · orientativa",
+      "Cambio": "Automático · 8 relaciones",
+      "Tracción": "Trasera",
+      "Carrocería": "Berlina",
+      "Puertas / plazas": "4 / 5",
+      "Color exterior": "Plata metalizado",
+      "Tapicería": "Cuero negro · ilustrativa",
+      "Consumo combinado": "4,8 l/100 km · orientativo",
+      "Emisiones CO₂": "128 g/km · orientativas",
+      "Normativa": "Euro 6 · por validar",
+      "Distintivo ambiental": "Por verificar según homologación",
+      "Dimensiones (largo × ancho × alto)": "4.709 × 1.827 × 1.435 mm · orientativas",
+      "Maletero": "480 litros · orientativo",
+      "Procedencia": "Alemania · ejemplo",
+      "Historial / documentación": "Sin historial real asociado a esta demo"
+    },
+    "equipment": {
+      "Confort": [
+        "Asientos deportivos delanteros",
+        "Climatización automática",
+        "Volante multifunción",
+        "Portón con apertura asistida"
+      ],
+      "Tecnología": [
+        "Sistema multimedia con navegación",
+        "Instrumentación digital",
+        "Conectividad de smartphone",
+        "Sensores de aparcamiento"
+      ],
+      "Seguridad": [
+        "Faros LED",
+        "Control de crucero",
+        "Asistente de frenada",
+        "Reconocimiento de señales"
+      ]
+    },
+    "gallery": [
+      {
+        "slot": 0,
+        "label": "Vista principal"
+      },
+      {
+        "slot": 1,
+        "label": "Frontal"
+      },
+      {
+        "slot": 2,
+        "label": "Trasera"
+      },
+      {
+        "slot": 3,
+        "label": "Lateral izquierdo"
+      },
+      {
+        "slot": 4,
+        "label": "Lateral derecho"
+      },
+      {
+        "slot": 5,
+        "label": "Interior"
+      },
+      {
+        "slot": 6,
+        "label": "Salpicadero y volante"
+      },
+      {
+        "slot": 7,
+        "label": "Plazas traseras"
+      },
+      {
+        "slot": 8,
+        "label": "Llantas"
+      }
+    ]
+  },
+  {
+    "id": "demo-audi-q3",
+    "slug": "audi-q3-35-tfsi",
+    "demo": true,
+    "brand": "Audi",
+    "model": "Q3 35 TFSI",
+    "trim": "S line · S tronic",
+    "year": 2023,
+    "mileage": 28600,
+    "fuel": "Gasolina",
+    "transmission": "Automático",
+    "body": "SUV",
+    "price": 35900,
+    "power": 150,
+    "image": "/images/audi.png",
+    "description": "Un SUV compacto para quienes imaginan una conducción versátil y una posición elevada. La configuración de muestra combina un acabado gris grafito con un interior oscuro. Esta ficha sirve para explorar el diseño del catálogo; no representa un vehículo disponible.",
+    "specs": {
+      "Marca / modelo": "Audi · Q3 35 TFSI",
+      "Versión": "S line · ejemplo",
+      "Primera matriculación": "03/2023 · ficticia",
+      "Kilometraje": "28.600 km · ficticio",
+      "Precio": "35.900 € · ficticio",
+      "Motor": "Gasolina · 4 cilindros",
+      "Cilindrada": "1.498 cm³ · orientativa",
+      "Potencia": "110 kW / 150 CV · orientativa",
+      "Cambio": "Automático · 7 relaciones",
+      "Tracción": "Delantera",
+      "Carrocería": "SUV",
+      "Puertas / plazas": "5 / 5",
+      "Color exterior": "Gris grafito metalizado",
+      "Tapicería": "Negra · ilustrativa",
+      "Consumo combinado": "6,5 l/100 km · orientativo",
+      "Emisiones CO₂": "148 g/km · orientativas",
+      "Normativa": "Euro 6 · por validar",
+      "Distintivo ambiental": "C · por validar en DGT",
+      "Dimensiones (largo × ancho × alto)": "4.484 × 1.849 × 1.585 mm · orientativas",
+      "Maletero": "530 litros · orientativo",
+      "Procedencia": "Alemania · ejemplo",
+      "Historial / documentación": "Sin historial real asociado a esta demo"
+    },
+    "equipment": {
+      "Confort": [
+        "Climatizador automático",
+        "Asientos delanteros ajustables",
+        "Volante multifunción",
+        "Banqueta trasera configurable"
+      ],
+      "Tecnología": [
+        "Cuadro de instrumentos digital",
+        "Pantalla multimedia táctil",
+        "Integración de smartphone",
+        "Cámara de marcha atrás"
+      ],
+      "Seguridad": [
+        "Faros LED",
+        "Control de crucero",
+        "Asistente de mantenimiento de carril",
+        "Sensores delanteros y traseros"
+      ]
+    },
+    "gallery": [
+      {
+        "slot": 0,
+        "label": "Vista principal"
+      },
+      {
+        "slot": 1,
+        "label": "Frontal"
+      },
+      {
+        "slot": 2,
+        "label": "Trasera"
+      },
+      {
+        "slot": 3,
+        "label": "Lateral izquierdo"
+      },
+      {
+        "slot": 4,
+        "label": "Lateral derecho"
+      },
+      {
+        "slot": 5,
+        "label": "Interior"
+      },
+      {
+        "slot": 6,
+        "label": "Salpicadero y volante"
+      },
+      {
+        "slot": 7,
+        "label": "Plazas traseras"
+      },
+      {
+        "slot": 8,
+        "label": "Llantas"
+      }
+    ]
+  },
+  {
+    "id": "vendido-golf-gti-mk6-adidas",
+    "slug": "volkswagen-golf-gti-mk6-adidas",
+    "status": "vendido",
+    "demo": false,
+    "brand": "Volkswagen",
+    "model": "Golf GTI Mk6",
+    "trim": "Edición Adidas · 2.0 TSI · 211 CV",
+    "year": null,
+    "mileage": 123000,
+    "fuel": "Gasolina",
+    "transmission": "Manual",
+    "body": "Compacto 3 puertas",
+    "price": null,
+    "power": 211,
+    "image": "/images/golf-gti-adidas/01-showroom-frontal.jpg",
+    "description": "Volkswagen Golf GTI Mk6 Edición Adidas vendido por FRAMA AUTO. Unidad importada desde un concesionario oficial Volkswagen en Alemania, según la información facilitada para su anuncio. Se anunció con mantenimientos sellados y al día, ITV alemana (HU) e ITV española de importación realizadas, trámites de matriculación en España incluidos y dos llaves originales. Este vehículo ya está vendido: la ficha se conserva como antecedente de una operación realizada.",
+    "specs": {
+      "Marca y modelo": "Volkswagen Golf GTI Mk6",
+      "Edición": "Adidas",
+      "Estado": "Vendido · operación realizada",
+      "Kilometraje anunciado": "123.000 km",
+      "Motor": "2.0 TSI gasolina · distribución por cadena",
+      "Potencia": "211 CV",
+      "Cambio": "Manual, 6 velocidades",
+      "Carrocería": "3 puertas",
+      "Color exterior": "Rojo Tornado",
+      "Asientos": "Edición Adidas, tapicería cuero/tela",
+      "Llantas": "18 pulgadas, modelo Serron",
+      "Procedencia anunciada": "Concesionario oficial Volkswagen, Alemania",
+      "Documentación anunciada": "Mantenimiento sellado, ITV alemana HU, ITV española de importación",
+      "Trámites anunciados": "Tasas DGT y matriculación española incluidos",
+      "Llaves entregadas": "2 llaves originales",
+      "Localización anunciada": "Palma del Río (Córdoba)"
+    },
+    "equipment": {
+      "Exclusividades Adidas": [
+        "Asientos Adidas con tres bandas",
+        "Llantas Serron de 18 pulgadas",
+        "Pilotos traseros LED oscurecidos de origen"
+      ],
+      "Confort": [
+        "Asientos calefactables · paquete de invierno",
+        "Climatizador bizona",
+        "Control de crucero",
+        "Sensores de aparcamiento delanteros y traseros",
+        "Asistente de arranque en pendiente"
+      ],
+      "Iluminación y seguridad": [
+        "Faros Bi-Xenón con luz diurna LED",
+        "ISOFIX",
+        "ABS",
+        "ESP"
+      ],
+      "Multimedia": [
+        "Bluetooth",
+        "Reproducción de audio por streaming"
+      ]
+    },
+    "gallery": [
+      {
+        "slot": 0,
+        "label": "Vista principal en concesionario",
+        "src": "/images/golf-gti-adidas/01-showroom-frontal.jpg"
+      },
+      {
+        "slot": 1,
+        "label": "Vista frontal y lateral",
+        "src": "/images/golf-gti-adidas/02-showroom-lateral.jpg"
+      },
+      {
+        "slot": 2,
+        "label": "Exterior, matrícula pixelada",
+        "src": "/images/golf-gti-adidas/03-exterior.jpg"
+      },
+      {
+        "slot": 3,
+        "label": "Llantas Serron de 18 pulgadas",
+        "src": "/images/golf-gti-adidas/04-llantas.jpg"
+      },
+      {
+        "slot": 4,
+        "label": "Tapicería exclusiva Adidas",
+        "src": "/images/golf-gti-adidas/05-interior-asientos.jpg"
+      },
+      {
+        "slot": 5,
+        "label": "Salpicadero y cambio manual",
+        "src": "/images/golf-gti-adidas/06-salpicadero.jpg"
+      },
+      {
+        "slot": 6,
+        "label": "Asientos delanteros deportivos",
+        "src": "/images/golf-gti-adidas/07-asientos-delanteros.jpg"
+      }
+    ]
+  }
 ]

@@ -1,5 +1,13 @@
 # Historial de versiones · FRAMA AUTO
 
+## 0.1.2 — 8 de noviembre de 2026
+
+- Se añade como venta realizada el Volkswagen Golf GTI Mk6 Edición Adidas, con 123.000 km, 211 CV y cambio manual de seis velocidades.
+- Galería de siete fotos tratadas, con matrículas pixeladas.
+- Sección separada «Operaciones realizadas», sin presentar el vehículo como disponible.
+- Ficha de detalles técnicos, equipamiento y procedencia, sin inventar precio ni año.
+- Compatibilidad con imágenes reales individuales manteniendo el catálogo de demostración.
+
 ## 0.1.1 — 8 de noviembre de 2026
 
 - Botón flotante de WhatsApp circular y verde, sin texto visible, con icono oscuro centrado.
@@ -14,6 +22,6 @@
 - Botón flotante de WhatsApp con número ficticio reservado, para probar la apariencia y el enlace. Antes de ofrecer atención debe reemplazarse por el teléfono real.
 - Supabase Free: advertencia de posible pausa por actividad insuficiente durante un período de siete días.
 
-**Siguiente cambio:** incrementar a 0.1.2.
+**Siguiente cambio:** incrementar a 0.1.3.
 
 El JSON sigue siendo el origen del catálogo. La base de datos, el login y las operaciones administrativas no están implementados.

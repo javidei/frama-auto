@@ -102,7 +102,7 @@ Antes de operar comercialmente: sustituir el contenido ficticio por información
 - Supabase Free puede suspender un proyecto si tiene actividad insuficiente durante un período de siete días. Una visita semanal no garantiza que permanezca activo. Para producción, valorar Pro y copias verificadas. Véase https://supabase.com/docs/guides/platform/free-project-pausing.
 - La web publicada desde GitHub Pages conserva una capa de compatibilidad `site-enhancements.js` hasta que se reconstruya el export de Next.js. No contiene contraseñas, claves ni permisos simulados.
 
-Próxima modificación visible: incrementar la versión a **0.1.2** en el código fuente y los recursos estáticos.
+Próxima modificación visible: incrementar la versión a **0.1.3** en el código fuente y los recursos estáticos.
 
 
 ## Versión 0.1.1 · WhatsApp circular
@@ -110,3 +110,13 @@ Próxima modificación visible: incrementar la versión a **0.1.2** en el códig
 - Botón flotante verde y totalmente circular, sin texto visible, con icono negro de WhatsApp.
 - Modificación sincronizada en componentes Next.js y el script usado por GitHub Pages.
 - Se conserva el número ficticio de prueba; sustituir antes de su uso comercial.
+
+
+## Versión 0.1.2 · Antecedente de venta Volkswagen Golf GTI Adidas
+
+- Golf GTI Mk6 Edición Adidas (Rojo Tornado, 2.0 TSI, 211 CV, 123.000 km) como operación finalizada, no a la venta.
+- Siete fotografías optimizadas de esta unidad, con matrícula pixelada. Hay copias en `public/images/golf-gti-adidas/` y en `images/golf-gti-adidas/` para GitHub Pages.
+- Tarjeta de historial en `/#vendidos`, separada de los coches de demostración; ficha completa en `/vehiculos/volkswagen-golf-gti-mk6-adidas/`.
+- Sin año ni precio inventados. Los atributos proceden del texto facilitado para el anuncio, no de una auditoría independiente.
+- Compatibilidad con galerías de fotografías individuales y antiguos mosaicos ilustrativos.
+- La publicación actual de GitHub Pages usa un script de compatibilidad en portada y un HTML estático para la nueva ficha; el siguiente `npm run export:pages` generará esa ruta a partir de Next.js.

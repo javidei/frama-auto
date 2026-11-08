@@ -1,14 +1,34 @@
-/* FRAMA AUTO v0.1.1 · compatibilidad con export estático de GitHub Pages.
+/* FRAMA AUTO v0.1.2 · compatibilidad con export estático de GitHub Pages.
    El número WhatsApp es ficticio (rango 555 reservado para ejemplos).
    No hay login, escrituras administrativas ni conexión a base de datos. */
 (() => {
   "use strict";
-  const VERSION = "0.1.1";
+  const VERSION = "0.1.2";
   const TEST_PHONE = "12025550148";
   const base = location.pathname === "/frama-auto" || location.pathname.startsWith("/frama-auto/") ? "/frama-auto" : "";
   const message = encodeURIComponent("Hola, he visto FRAMA AUTO y quiero información sobre un vehículo.");
 
+
+  // Sección histórica: se monta en la exportación previa sin alterar la hidratación de Next.
+  function addSoldVehicle() {
+    const catalog = document.getElementById("catalogo");
+    if (!catalog || document.getElementById("vendidos")) return;
+    if (!document.getElementById("frama-sold-style")) {
+      const style = document.createElement("style");
+      style.id = "frama-sold-style";
+      style.textContent = ".sold-section{padding:80px 0;background:#101318;border-top:1px solid #302b25;border-bottom:1px solid #302b25}.sold-section .eyebrow{color:#d6b36c;font-weight:700;letter-spacing:2px;font-size:10px}.sold-section h2{font:400 clamp(32px,3vw,44px)/1.2 Georgia,serif;color:#f2f0eb;margin:10px 0 30px}.sold-section h2 em{color:#d6b36c}.sold-card{display:flex;max-width:790px;min-height:288px;border:1px solid #514634;border-radius:5px;background:#191c20;overflow:hidden;text-decoration:none;color:#f2f0eb!important}.sold-card:hover{border-color:#d6b36c}.sold-card-img{position:relative;width:46%;flex-shrink:0;background:#17191d}.sold-card-img img{display:block;width:100%;height:100%;min-height:288px;object-fit:cover}.sold-tag{position:absolute;left:14px;top:14px;padding:7px 13px;border:1px solid #d1aa61;background:#1d170e;color:#e8c982;border-radius:2px;letter-spacing:1px;font-size:10px;font-weight:bold}.sold-card-info{display:flex;flex-direction:column;padding:29px;flex:1}.sold-card-info h3{font:400 31px Georgia,serif;margin:7px 0}.sold-card-info p{font-size:12px;color:#a8adb2;margin:0}.sold-specs{display:flex;flex-wrap:wrap;gap:15px;color:#d8cbb0;font-size:11px;margin-top:19px}.sold-cta{color:#d6b36c;font-size:12px;margin-top:auto;padding-top:24px}@media(max-width:760px){.sold-section{padding:50px 0}.sold-card{flex-direction:column}.sold-card-img{width:100%;height:250px}.sold-card-img img{height:250px;min-height:0}.sold-card-info{min-height:220px;padding:23px}}";
+      document.head.appendChild(style);
+    }
+    const section = document.createElement("section");
+    section.id = "vendidos";
+    section.className = "sold-section";
+    section.setAttribute("aria-labelledby", "sold-heading");
+    section.innerHTML = '<div class="container"><p class="eyebrow">NUESTRA TRAYECTORIA</p><h2 id="sold-heading">Vehículos que ya <em>han encontrado dueño.</em></h2><a class="sold-card" href="' + base + '/vehiculos/volkswagen-golf-gti-mk6-adidas/"><div class="sold-card-img"><img src="' + base + '/images/golf-gti-adidas/01-showroom-frontal.jpg" loading="lazy" alt="Volkswagen Golf GTI Mk6 Adidas rojo vendido, fotografía real"><span class="sold-tag">VENDIDO</span></div><div class="sold-card-info"><span class="eyebrow">VOLKSWAGEN · OPERACIÓN REALIZADA</span><h3>Golf GTI Mk6</h3><p>Edición Adidas · 2.0 TSI · 211 CV</p><div class="sold-specs"><span>123.000 km</span><span>211 CV</span><span>Manual · 6 velocidades</span></div><span class="sold-cta">Ver ficha y las 7 fotografías →</span></div></a><p style="font-size:11px;color:#a8adb2;margin:16px 0 0">Una venta realizada. Este coche no está disponible para comprar.</p></div>';
+    catalog.insertAdjacentElement("afterend", section);
+  }
+
   function enhance() {
+    addSoldVehicle();
     const footer = document.querySelector(".footer-bottom");
     if (footer) {
       const copyright = footer.querySelector("span");
