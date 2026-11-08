@@ -3,6 +3,7 @@
    La administración usa Supabase; los datos públicos se consultan con acceso de solo lectura. */
 (() => {
   "use strict";
+  if (!document.querySelector("script[data-frama-contact]")) { const script=document.createElement("script");script.src=(location.pathname.startsWith("/frama-auto")?"/frama-auto":"")+"/frama-contact.js?v=0.1.7";script.defer=true;script.dataset.framaContact="true";document.head.appendChild(script); }
   if(!document.querySelector('script[src$="/pwa-register.js"]')){
     const base=location.pathname==="/frama-auto"||location.pathname.startsWith("/frama-auto/")?"/frama-auto":"";
     const script=document.createElement("script");script.src=base+"/pwa-register.js";script.defer=true;document.head.append(script);
