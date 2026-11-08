@@ -37,13 +37,39 @@ function updateWhatsApp(){
    a.setAttribute("aria-label","Contactar con FRAMA AUTO por WhatsApp");
  }else{a.style.display="none";a.removeAttribute("href");}
 }
+let lastVehicles=[];
+async function refreshVehicleOptions(){
+  const select=document.querySelector("#contacto form.frama-contact-form select[name=interest]");
+  if(!select)return;
+  try{
+    const url=API+"/rest/v1/frama_vehicles?select=slug,brand,model,trim,commercial_status&publication_status=eq.published&is_demo=eq.false&order=created_at.desc";
+    const res=await fetch(url,{headers:{apikey:KEY,Accept:"application/json"},cache:"no-store"});
+    if(!res.ok)throw new Error("No se pudieron cargar los coches publicados.");
+    const cars=await res.json();
+    if(!Array.isArray(cars))return;
+    lastVehicles=cars;
+    const existing=[...select.options].filter(o=>o.value).map(o=>({value:o.value,label:o.textContent.replace(/\\s*[·-]\\s*ejemplo\\s*$/i,"").trim()}));
+    const items=new Map(existing.map(item=>[item.label.toLocaleLowerCase("es"),item]));
+    for(const car of cars){
+      const name=[car.brand,car.model,car.trim].filter(Boolean).join(" ").trim();
+      if(!name)continue;
+      const key=name.toLocaleLowerCase("es");
+      const tag=car.commercial_status==="en_importacion"?" (En importación)":"";
+      items.set(key,{value:name+tag,label:name+tag});
+    }
+    const selected=select.value;
+    select.replaceChildren(new Option("Una importación a medida",""),...[...items.values()].map(item=>new Option(item.label,item.value)));
+    select.value=[...select.options].some(o=>o.value===selected)?selected:"";
+  }catch(error){console.warn("FRAMA AUTO vehículos de contacto:",error);}
+}
+
 function setupForm(){
  const section=document.getElementById("contacto");
  if(!section)return;
  const original=section.querySelector("form");
  if(!original||original.dataset.framaContact==="true")return;
  const options=[...original.querySelectorAll("select option")].map(x=>({value:x.value,label:x.textContent||""}));
- const menu=options.length?options:[{value:"",label:"Una importación a medida"}];
+ const menu=[{value:"",label:"Una importación a medida"},...options.filter(x=>x.value).map(x=>({value:x.value,label:x.label.replace(/\\s*[·-]\\s*ejemplo\\s*$/i,"").trim()}))];
  const form=document.createElement("form");
  form.className="frama-contact-form";
  form.dataset.framaContact="true";
@@ -54,6 +80,7 @@ function setupForm(){
  +'<label style="position:absolute;left:-10000px" aria-hidden="true">Sitio web<input name="website" tabindex="-1" autocomplete="off"></label>'
  +'<button type="submit" class="button gold">Enviar consulta</button><p class="frama-contact-result" role="status" aria-live="polite" hidden></p>';
  original.replaceWith(form);
+ refreshVehicleOptions();
  const demo=section.querySelector(".demo-pill");if(demo)demo.remove();
  const intro=section.querySelector(".contact-layout>div:first-child >p:not(.eyebrow)");
  if(intro)intro.textContent="Cuéntanos qué coche buscas y te responderemos por correo electrónico.";
@@ -88,5 +115,5 @@ let busy=false;
 const obs=new MutationObserver(()=>{if(busy)return;busy=true;try{sync();}finally{busy=false;}});
 function start(){load();obs.observe(document.body,{childList:true,subtree:true});setTimeout(()=>obs.disconnect(),20000);}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});else start();
-document.addEventListener("visibilitychange",()=>{if(!document.hidden)load();});
+document.addEventListener("visibilitychange",()=>{if(!document.hidden){load();refreshVehicleOptions();}});
 })();
