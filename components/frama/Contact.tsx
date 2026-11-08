@@ -32,7 +32,7 @@ export function Contact({vehicles,initialVehicle=""}:{vehicles:Vehicle[];initial
   }
   return <section id="contacto" className="contact section"><div className="container contact-layout">
     <div><p className="eyebrow">TU PRÓXIMO DESTINO</p><h2>Todo empieza<br/>con una conversación.</h2><p>Cuéntanos qué coche buscas y te responderemos por correo electrónico.</p></div>
-    <form className="frama-contact-form" onSubmit={submit}>
+    <form className="frama-contact-form" data-frama-contact="true" onSubmit={submit}>
       <div className="frama-contact-fields">
         <label><span>Tu nombre *</span><input name="name" autoComplete="name" required maxLength={100} value={name} onChange={e=>setName(e.target.value)} /></label>
         <label><span>Tu correo electrónico *</span><input name="email" type="email" autoComplete="email" required maxLength={180} value={email} onChange={e=>setEmail(e.target.value)} /></label>
