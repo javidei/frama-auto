@@ -1,5 +1,5 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.6",
   "updated_at": "2026-11-08",
   "groups": [
     {
@@ -76,6 +76,16 @@
         {
           "title": "Formulario de alta",
           "description": "Campos, imágenes, vista previa y exportación JSON.",
+          "status": "hecho"
+        },
+        {
+          "title": "Campos de alta con ejemplos",
+          "description": "Placeholders orientativos, como «32.000 kilómetros», con los campos nuevos vacíos.",
+          "status": "hecho"
+        },
+        {
+          "title": "Clasificación detallada de fotografías",
+          "description": "Tipos habituales (frontal, laterales, carrocería, capó, llantas, luces e interior), opción personalizada, descripción y portada.",
           "status": "hecho"
         },
         {
