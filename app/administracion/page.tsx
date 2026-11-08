@@ -55,7 +55,7 @@ export default function AdministracionPage() {
       <p className="admin-eyebrow">FRAMA AUTO / ÁREA TÉCNICA</p>
       <h1>Administración <em>en construcción.</em></h1>
       <p className="admin-lead">Hoja de ruta para convertir el catálogo actual en un sistema con base de datos, edición de vehículos y acceso exclusivo para usuarios autorizados.</p>
-      <div className="admin-meta"><span>Versión 0.1.0</span><span>Acceso público temporal</span><span>Solo planificación</span></div>
+      <div className="admin-meta"><span>Versión 0.1.1</span><span>Acceso público temporal</span><span>Solo planificación</span></div>
     </header>
     <section className="admin-notice" aria-label="Estado actual del área">
       <h2>Esta página todavía no requiere contraseña.</h2>
@@ -73,6 +73,6 @@ export default function AdministracionPage() {
       <div className="admin-roadmap">{groups.map(group => <section className="admin-group" key={group.title}><h2>{group.title}</h2><p className="admin-group-intro">{group.description}</p>{group.tasks.map(([title, description]) => <div className="admin-task" key={title}><span aria-hidden="true" className="admin-task-circle"/><div><strong>{title}</strong><span>{description}</span></div><span className="admin-task-status">Pendiente</span></div>)}</section>)}</div>
     </section>
     <a className="admin-back" href="/">← Volver a FRAMA AUTO</a>
-    <p className="admin-small">Hoja de ruta informativa · v0.1.0 · La edición y los permisos reales se implementarán en futuras versiones.</p>
+    <p className="admin-small">Hoja de ruta informativa · v0.1.1 · La edición y los permisos reales se implementarán en futuras versiones.</p>
   </div></main>;
 }

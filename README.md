@@ -102,4 +102,11 @@ Antes de operar comercialmente: sustituir el contenido ficticio por información
 - Supabase Free puede suspender un proyecto si tiene actividad insuficiente durante un período de siete días. Una visita semanal no garantiza que permanezca activo. Para producción, valorar Pro y copias verificadas. Véase https://supabase.com/docs/guides/platform/free-project-pausing.
 - La web publicada desde GitHub Pages conserva una capa de compatibilidad `site-enhancements.js` hasta que se reconstruya el export de Next.js. No contiene contraseñas, claves ni permisos simulados.
 
-Próxima modificación visible: incrementar la versión a **0.1.1** en el código fuente y los recursos estáticos.
+Próxima modificación visible: incrementar la versión a **0.1.2** en el código fuente y los recursos estáticos.
+
+
+## Versión 0.1.1 · WhatsApp circular
+
+- Botón flotante verde y totalmente circular, sin texto visible, con icono negro de WhatsApp.
+- Modificación sincronizada en componentes Next.js y el script usado por GitHub Pages.
+- Se conserva el número ficticio de prueba; sustituir antes de su uso comercial.
