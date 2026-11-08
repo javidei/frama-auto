@@ -57,6 +57,7 @@ export default function AdministracionPage() {
       <p className="admin-lead">Hoja de ruta para convertir el catálogo actual en un sistema con base de datos, edición de vehículos y acceso exclusivo para usuarios autorizados.</p>
       <div className="admin-meta"><span>Versión 0.1.2</span><span>Acceso público temporal</span><span>Solo planificación</span></div>
     </header>
+    <section id="frama-vehicle-editor" aria-labelledby="vf-title"><p>Cargando formulario de alta de vehículos…</p></section><script defer src="/admin-vehicle-form.js"></script>
     <section className="admin-notice" aria-label="Estado actual del área">
       <h2>Esta página todavía no requiere contraseña.</h2>
       <p>No existe un panel de edición ni login activo. Este listado es público y exclusivamente informativo; antes de gestionar datos reales se protegerá con Supabase Auth y permisos en servidor/base de datos.</p>

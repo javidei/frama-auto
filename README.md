@@ -124,3 +124,10 @@ Próxima modificación visible: incrementar la versión a **0.1.3** en el códig
 ## Aplicación PWA instalable
 
 La web se puede instalar como aplicación desde Chrome en Android o mediante «Añadir a pantalla de inicio» en iOS. No es una APK ni una aplicación distribuida en tiendas. Incluye manifest, iconos FRAMA AUTO, registro de service worker y caché mínima para la portada visitada. Los datos del catálogo no están sincronizados para uso sin conexión. Los archivos fuente están en `public/` y en `app/layout.tsx`; la publicación Pages se sirve desde la raíz.
+
+
+## Vista previa de alta de vehículos (interfaz)
+
+La sección pública \`/administracion/\` incluye un preparador de fichas **sin persistencia**: campos vacíos con ejemplos en placeholders, ficha técnica, listado de equipamiento, fotografías con vista seleccionable y etiqueta personalizada «Otra vista…», imagen principal, vista previa y exportación JSON de los datos (no de las imágenes). Ninguna foto ni ficha se sube a la BBDD o se publica; el API administrativo sigue deshabilitado hasta disponer de autenticación y autorización reales.
+
+Archivos de interfaz: \`public/admin-vehicle-form.js\` y \`public/admin-vehicle-form.css\`. En GitHub Pages también existen sus copias en raíz. Se integran tanto en la exportación \`app/administracion/page.tsx\` como en el HTML ya publicado \`administracion/index.html\`. Para una alta real se requiere backend, almacenamiento, validación y roles seguros.
