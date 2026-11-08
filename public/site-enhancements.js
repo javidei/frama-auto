@@ -40,7 +40,7 @@
       if (copyright && !copyright.textContent.includes("v" + VERSION)) {
         copyright.textContent = "© " + new Date().getFullYear() + " FRAMA AUTO · v" + VERSION;
       }
-      const adminLinks = [...footer.querySelectorAll("a[href]")].filter(a => { try { return new URL(a.href, location.href).pathname.replace(/\\/$/, "") === (base + "/administracion"); } catch { return false; } });
+      const adminLinks = [...footer.querySelectorAll("a[href]")].filter(a => { try { return new URL(a.href, location.href).pathname.replace(/\/$/, "") === (base + "/administracion"); } catch { return false; } });
       adminLinks.slice(1).forEach(a => a.remove());
       if (!adminLinks.length) {
         const anchor = document.createElement("a");
