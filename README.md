@@ -131,3 +131,15 @@ La web se puede instalar como aplicación desde Chrome en Android o mediante «A
 La sección pública \`/administracion/\` incluye un preparador de fichas **sin persistencia**: campos vacíos con ejemplos en placeholders, ficha técnica, listado de equipamiento, fotografías con vista seleccionable y etiqueta personalizada «Otra vista…», imagen principal, vista previa y exportación JSON de los datos (no de las imágenes). Ninguna foto ni ficha se sube a la BBDD o se publica; el API administrativo sigue deshabilitado hasta disponer de autenticación y autorización reales.
 
 Archivos de interfaz: \`public/admin-vehicle-form.js\` y \`public/admin-vehicle-form.css\`. En GitHub Pages también existen sus copias en raíz. Se integran tanto en la exportación \`app/administracion/page.tsx\` como en el HTML ya publicado \`administracion/index.html\`. Para una alta real se requiere backend, almacenamiento, validación y roles seguros.
+
+
+## Versión 0.1.3 · TO DO actualizado (08/11/2026)
+
+- La ruta `/administracion/` incluye un seguimiento visible con 23 tareas: **11 hechas, 4 en curso y 8 pendientes**.
+- Fuente de estados: `data/development-todo.json`. La página Next.js importa el JSON y la exportación estática incluye el mismo resumen.
+- El script de acceso ya no oculta el TO DO debajo del panel.
+- Se comprobó en Supabase que existen las tablas FRAMA, el bucket de fotografías, 4 vehículos, 34 fotos, políticas RLS y un registro de personal. **No implica que el flujo de administración esté completamente probado ni que la web publique las altas automáticamente.**
+- El catálogo público continúa leyendo `data/vehicles.json`; la sincronización y puesta en producción quedan pendientes.
+- Las próximas tareas deben actualizar el JSON de desarrollo y regenerar la versión estática de la ruta.
+
+Próximo incremento: **0.1.4**.

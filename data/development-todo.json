@@ -1,0 +1,145 @@
+{
+  "version": "0.1.3",
+  "updated_at": "2026-11-08",
+  "groups": [
+    {
+      "title": "01 · Web y catálogo",
+      "description": "Lo que ya se ve en la web.",
+      "tasks": [
+        {
+          "title": "Catálogo responsive y filtros",
+          "description": "Búsqueda y filtros de vehículos de ejemplo.",
+          "status": "hecho"
+        },
+        {
+          "title": "Fichas técnicas y galerías",
+          "description": "Detalle, equipamiento y ampliación de imágenes.",
+          "status": "hecho"
+        },
+        {
+          "title": "Golf GTI Adidas vendido",
+          "description": "Ficha histórica con siete fotografías y matrículas ocultas.",
+          "status": "hecho"
+        },
+        {
+          "title": "Historial de ventas realizadas",
+          "description": "Sección de vehículos vendidos separada del catálogo.",
+          "status": "hecho"
+        },
+        {
+          "title": "Catálogo JSON inicial",
+          "description": "Vehículos de ejemplo y venta histórica incluidos.",
+          "status": "hecho"
+        },
+        {
+          "title": "Publicación automática desde el panel",
+          "description": "Conectar las altas reales con la web pública.",
+          "status": "pendiente"
+        }
+      ]
+    },
+    {
+      "title": "02 · Datos y fotografías",
+      "description": "Recursos creados y comprobaciones restantes.",
+      "tasks": [
+        {
+          "title": "Proyecto Supabase existente",
+          "description": "Proyecto activo confirmado.",
+          "status": "hecho"
+        },
+        {
+          "title": "Tablas y bucket de fotografías",
+          "description": "Tablas FRAMA y almacenamiento creados.",
+          "status": "hecho"
+        },
+        {
+          "title": "Datos iniciales cargados",
+          "description": "Cuatro vehículos y 34 registros de fotografías comprobados.",
+          "status": "hecho"
+        },
+        {
+          "title": "RLS y permisos",
+          "description": "Políticas creadas, falta comprobar todos los accesos.",
+          "status": "en_curso"
+        },
+        {
+          "title": "Subida y orden de fotografías",
+          "description": "El panel contiene código de carga y orden, pendiente prueba completa.",
+          "status": "en_curso"
+        }
+      ]
+    },
+    {
+      "title": "03 · Administración y usuarios",
+      "description": "Herramientas para los dos trabajadores.",
+      "tasks": [
+        {
+          "title": "Formulario de alta",
+          "description": "Campos, imágenes, vista previa y exportación JSON.",
+          "status": "hecho"
+        },
+        {
+          "title": "Acceso con Supabase Auth",
+          "description": "Código de login y cierre de sesión, pendiente prueba integral.",
+          "status": "en_curso"
+        },
+        {
+          "title": "Altas, edición y estados",
+          "description": "Interfaz y llamadas existentes; falta validar la operación real.",
+          "status": "en_curso"
+        },
+        {
+          "title": "Segundo usuario y permisos",
+          "description": "Consta un trabajador; falta configurar y probar el segundo.",
+          "status": "pendiente"
+        },
+        {
+          "title": "Autologin y recuperación",
+          "description": "Persistencia y recuperación de sesión segura.",
+          "status": "pendiente"
+        },
+        {
+          "title": "Auditoría y validaciones",
+          "description": "Pruebas de permisos, errores e historial de cambios.",
+          "status": "pendiente"
+        }
+      ]
+    },
+    {
+      "title": "04 · Lanzamiento y Meta",
+      "description": "Pendientes para uso comercial.",
+      "tasks": [
+        {
+          "title": "WhatsApp flotante circular",
+          "description": "Botón con icono y número ficticio de prueba.",
+          "status": "hecho"
+        },
+        {
+          "title": "PWA instalable básica",
+          "description": "Manifest, iconos y service worker.",
+          "status": "hecho"
+        },
+        {
+          "title": "WhatsApp y contacto reales",
+          "description": "Número definitivo, contacto y privacidad.",
+          "status": "pendiente"
+        },
+        {
+          "title": "Dominio y titularidad del cliente",
+          "description": "Hosting y transferencia a las cuentas de la empresa.",
+          "status": "pendiente"
+        },
+        {
+          "title": "Meta Ads y feed de vehículos",
+          "description": "Catálogo publicitario, Pixel y consentimiento.",
+          "status": "pendiente"
+        },
+        {
+          "title": "Copias y supervisión",
+          "description": "Backups, recuperación y alertas de continuidad.",
+          "status": "pendiente"
+        }
+      ]
+    }
+  ]
+}
