@@ -2,7 +2,7 @@
 .frama-live-stock{padding:70px 0 55px;background:#11151a;border-bottom:1px solid #403625}
 .frama-live-stock .frama-live-title,.frama-live-sales .frama-live-title{font:400 clamp(32px,4vw,46px)/1.15 Georgia,serif;margin:8px 0 28px;color:#f1ede6}
 .frama-live-eyebrow{color:#d7b877;letter-spacing:2px;font:700 10px Arial,sans-serif}
-.frama-live-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:22px}
+.frama-live-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:22px}
 .frama-live-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid #484032;border-radius:7px;background:#191b20;text-decoration:none;color:#f4eee3!important}
 .frama-live-card:hover{border-color:#dab56a}
 .frama-live-card-visual{height:225px;background:#24282e;position:relative;overflow:hidden}
