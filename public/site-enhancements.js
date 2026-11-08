@@ -64,6 +64,7 @@
       const anchor = document.createElement("a");
       anchor.id = "frama-whatsapp";
       anchor.className = "whatsapp-fab";
+      anchor.style.display = "none"; // hasta cargar el número real desde Supabase
       anchor.href = "https://wa.me/" + TEST_PHONE + "?text=" + message;
       anchor.target = "_blank";
       anchor.rel = "noopener noreferrer";
