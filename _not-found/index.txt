@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+2:I[6367,["177","static/chunks/app/layout-1819f64621c15a6b.js"],"Header"]
+3:I[9075,[],""]
+4:I[5460,["39","static/chunks/app/error-ab4ff8d02a841e7f.js"],"default"]
+5:I[4703,[],""]
+6:I[6367,["177","static/chunks/app/layout-1819f64621c15a6b.js"],"Footer"]
+7:I[4090,[],"OutletBoundary"]
+8:"$Sreact.suspense"
+b:I[4090,[],"ViewportBoundary"]
+d:I[4090,[],"MetadataBoundary"]
+f:I[7209,[],"default",1]
+:HL["/frama-auto/_next/static/css/fa816fff8fbcb8db.css","style"]
+a:X
+0:{"P":null,"c":["","_not-found",""],"q":"","i":false,"f":[[["",{"children":["_not-found",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/frama-auto/_next/static/css/fa816fff8fbcb8db.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"es","children":["$","body",null,{"children":[["$","a",null,{"href":"#contenido","className":"skip-link","children":"Saltar al contenido"}],["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$4","errorStyles":[],"errorScripts":null,"template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"id":"contenido","className":"container error-page","children":[["$","p",null,{"className":"eyebrow","children":"404 · FUERA DE RUTA"}],["$","h1",null,{"children":"Esta página no está en el catálogo."}],["$","p",null,{"children":"Vuelve a la selección de vehículos de ejemplo."}],["$","a",null,{"href":"/frama-auto/#catalogo","className":"button gold","children":"Volver al catálogo →"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L6",null,{}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[["$","main",null,{"id":"contenido","className":"container error-page","children":[["$","p",null,{"className":"eyebrow","children":"404 · FUERA DE RUTA"}],["$","h1",null,{"children":"Esta página no está en el catálogo."}],["$","p",null,{"children":"Vuelve a la selección de vehículos de ejemplo."}],["$","a",null,{"href":"/frama-auto/#catalogo","className":"button gold","children":"Volver al catálogo →"}]]}],null,["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],{},null,false,null]},null,false,"$a"]},null,false,null],["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$8",null,{"name":"Next.Metadata","children":"$Le"}]}]}],null]}],false]],"m":"$undefined","G":["$f",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"gtCh3f4SP3n1ETFcl_ze7"}
+a:C
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:I[1663,[],"IconMark"]
+9:null
+e:[["$","title","0",{"children":"FRAMA AUTO · Importación y venta de vehículos"}],["$","meta","1",{"name":"description","content":"Catálogo de demostración FRAMA AUTO: vehículos, fichas técnicas y galerías. Todos los vehículos, imágenes y precios son ilustrativos."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/frama-auto/favicon.svg"}],["$","$L10","4",{}]]

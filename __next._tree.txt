@@ -1,0 +1,3 @@
+:HL["/frama-auto/_next/static/css/fa816fff8fbcb8db.css","style"]
+:HL["/frama-auto/images/hero.png","image",{"fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"gtCh3f4SP3n1ETFcl_ze7"}

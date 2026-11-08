@@ -1,65 +1,94 @@
-# FRAMA AUTO · Sitio web de demostración
+# FRAMA AUTO · demostración
 
-Landing + catálogo responsive para **importación y venta de vehículos**, basado en la referencia visual negra/dorada y el logotipo elegido.
+## Web publicada en GitHub Pages
 
-## Cómo arrancar
+Dirección pública: **https://javidei.github.io/frama-auto/**.
 
-Requiere **Node.js 18+**, sin instalar dependencias.
+Este repositorio contiene el proyecto completo y una exportación estática del mismo diseño para GitHub Pages. Los archivos publicados (`index.html`, `_next/`, `images/`, `vehiculos/`, `informacion/`, `404.html`, recursos de navegación y `.nojekyll`) están en la raíz porque esa es la configuración de Pages existente.
 
-```bash
+Para actualizar la web después de modificar código o JSON:
+
+```sh
+npm ci
+npm test
+npm run export:pages
+npm run preview:pages
+```
+
+La vista estática se comprueba en http://127.0.0.1:4173/frama-auto/. Después, subir a `main` tanto los cambios de código como los archivos generados en raíz. El despliegue automático de GitHub Pages publica esa raíz. El exportador compila Next.js en una carpeta temporal dentro de `work/`, conserva las fuentes con servidor y verifica las rutas y los recursos locales. No hay que subir `work/` ni `node_modules`.
+
+GitHub Pages no ejecuta servidor: esta publicación no ofrece API, login, envío de mensajes ni administración. Las funciones visuales, los filtros y las galerías funcionan en el navegador. El código de la edición con servidor se conserva, incluido su bloqueo de administración y el plan de BBDD. La selección de coche desde una ficha se aplica al cargar el formulario en el navegador.
+
+Antes de esta importación se conservó la versión anterior en la rama `codex/backup-before-import-2026-11-08`. El historial de `main` también conserva los commits previos.
+
+Web responsive en español para importación y venta de vehículos. Estética negra/dorada basada en la referencia, logotipo original conservado mediante recorte de presentación y subtítulo corregido a «Importación y venta de vehículos».
+
+## Arranque
+
+Requisitos: Node.js 22.13 o superior (verificado con 24.15), npm e internet para instalar dependencias. Desde esta carpeta:
+
+```sh
+npm ci
 npm run dev
 ```
 
-Abrir **http://localhost:4173**. Para comprobar el JSON:
+Abre http://localhost:5173. En Windows, permite a la aplicación lanzar el servidor cuando el sistema solicite autorización. No hace falta configurar una base de datos, cuentas ni claves.
 
-```bash
-npm test
+```sh
+npm run build
+npm start
 ```
 
-También sirve cualquier servidor estático (`python -m http.server 4173`). **No abrir `index.html` por doble clic**, ya que muchos navegadores impiden `fetch()` de JSON local con `file://`.
+El arranque de producción utiliza el emulador local del Worker generado; la consola muestra el puerto, normalmente 8787. El proyecto usa React, TypeScript y el starter Vinext con integración Sites. `npm run build` genera `dist/client` y `dist/server`, incluida la configuración necesaria del Worker.
 
-## Funciones
+## Qué incluye
 
-- Inicio con imagen hero, bloques de servicios e introducción al proceso.
-- Catálogo cargado desde `data/vehiculos.json` con búsqueda, filtros y ordenación.
-- Tarjetas que enlazan a fichas individuales con seis vistas (principal, frontal, trasera, lateral, interior y volante), descripción, equipamiento y especificaciones técnicas.
-- Navegación usando rutas hash (`#/vehiculo/slug`), compatible con alojamiento estático, incluida GitHub Pages.
-- Diseño adaptable a móvil, tablet y ordenador, menú móvil, controles de galería y estados vacíos.
-- Botón de contacto **solo demostrativo**: copia el texto de una consulta, no lo envía ni lo guarda.
-- Preparado para migrar a BBDD mediante `js/data-provider.js`. Diseño de permisos y SQL propuesto en `docs/bbdd-y-permisos.md` y `db/schema.sql`.
+- Portada, menú móvil, catálogo, proceso de importación, presentación y contacto de ejemplo.
+- Tres vehículos de muestra con fichas independientes en `/vehiculos/[slug]`.
+- Búsqueda por texto y filtros combinables de marca, combustible, carrocería, cambio y precio máximo. Orden por precio, año y kilometraje; estado vacío y reinicio. La URL conserva los filtros al recargar.
+- Nueve vistas por vehículo: principal, frontal, trasera, ambos laterales, interior, salpicadero/volante, plazas traseras y llantas. Galería ampliable, navegación por flechas, cierre con Escape y gestión nativa del foco mediante `dialog`.
+- Enlace desde una ficha al formulario con el vehículo preseleccionado. Solo crea una vista previa local; no envía mensajes ni persiste datos.
+- Avisos de demostración, accesibilidad básica, estados de error y 404, movimiento reducido y navegación por teclado.
 
-## Datos ficticios, imágenes y derechos
+## Datos y límites de esta versión
 
-**IMPORTANTE: NO ES UNA WEB OPERATIVA.** Los vehículos, precios, kilómetros, equipamientos y descripciones son **datos ficticios de muestra**. La mayoría de las imágenes son recortes de composiciones generadas para esta maqueta; **no documentan coches concretos** y algunas vistas no coinciden con marca, modelo o ángulo del nombre mostrado.
+`data/vehicles.json` es la fuente local. Los datos, precios, kilómetros, características y equipamientos son ficticios u orientativos. Ninguna ficha representa stock, un historial comprobado, una garantía o una oferta comercial. Las imágenes generadas pueden diferir de los modelos/versiones descritos. No se han inventado cifras de ventas, clientes o países.
 
-Las vistas opcionales externas enlazan a imágenes de Unsplash y tienen alternativa local si fallan: trasera BMW [Manu](https://unsplash.com/photos/7AjfWQFMgcM), volante BMW [Sebastiaan Chia](https://unsplash.com/photos/KTIKM41HsQY), trasera Mercedes [Rana Singh](https://unsplash.com/photos/k6-lNNJifcg), trasera Audi [Leo Gilgamesh](https://unsplash.com/photos/zyfRL9DTxR0). Revisar licencias, identidad del vehículo y consentimiento antes de usar fotografías reales en producción.
+Los recursos se sirven localmente en `public/images`; la web no depende de enlaces externos de imágenes ni fuentes tipográficas. Las galerías usan un atlas 3×3 por coche, mostrando cada vista mediante CSS. Para usar fotografías normales en la siguiente fase, sustituir `CarImage` por una imagen individual y guardar una URL por registro de galería.
 
-## Publicar
+El original del logo contiene un subtítulo antiguo. No se ha modificado su archivo: `Shell.tsx` y el estilo `.brand-crop` muestran exclusivamente el símbolo y FRAMA AUTO y añaden el subtítulo correcto como texto accesible.
 
-Se puede publicar la raíz del proyecto en una rama de GitHub Pages sin compilación. Los enlaces usan hashes y todas las rutas de recursos son relativas. **La web publicada será solo una demostración:** no exponer a visitantes públicos datos ficticios como inventario real.
-
-## Estructura
+## Arquitectura y futura BBDD
 
 ```text
-assets/                Logo, portada y fotos ilustrativas
-css/styles.css         Estilos responsive
-js/app.js              UI, filtros, tarjetas, fichas y galerías
-js/data-provider.js    Capa de acceso a datos
-data/vehiculos.json    Inventario de ejemplo
-db/schema.sql          Propuesta PostgreSQL (no implementada)
-docs/                  Contrato de permisos y plan de migración
-tests/validate.mjs     Validación básica del catálogo
-index.html             Entrada única
+Pantallas del servidor / API GET
+            ↓
+CatalogRepository (contrato TypeScript)
+            ↓
+JSON local → futuro adaptador de base de datos
 ```
 
-## Pendiente antes de producción
+- `lib/catalog/types.ts`: contrato público y forma de los vehículos.
+- `lib/catalog/repository.ts`: punto único para cambiar el almacenamiento; solo se importa desde páginas/rutas del servidor.
+- `lib/catalog/filter.ts`: filtrado puro y reutilizable para este catálogo pequeño.
+- `app/api/vehicles`: consultas públicas de lectura; incluyen `demo: true`.
+- `app/api/admin/vehicles`: administración deshabilitada en servidor, devuelve 503 en GET, POST, PUT, PATCH y DELETE. No hay login simulado, contraseñas demo ni autenticación en localStorage.
+- `docs/BASE-DE-DATOS.md`: entidades, roles y pasos para una integración real.
 
-Información real de contacto, disponibilidad, condiciones de venta, textos legales y privacidad, fotos y fichas de unidades reales, registro de marca, persistencia, API, autenticación, RBAC validado en servidor y auditoría.
+Para catálogos grandes, trasladar filtros, orden y paginación al repositorio/API del servidor. Las pantallas no deben conocer conexiones, credenciales ni consultas SQL.
 
-### GitHub Pages
+## Verificación
 
-Este proyecto está publicado en la rama `main` de [javidei/frama-auto](https://github.com/javidei/frama-auto), desde la carpeta raíz (`/`).
+```sh
+node node_modules/typescript/bin/tsc --noEmit
+node --test tests/catalog.test.mjs
+node --test tests/http.test.mjs
+```
 
-URL prevista de GitHub Pages: **https://javidei.github.io/frama-auto/**. La primera publicación puede requerir que GitHub complete su despliegue.
+La última orden requiere `npm run dev` abierto. Para otro origen, configurar `FRAMA_TEST_URL` antes de lanzarla. Comprueba páginas, API, imágenes, errores y bloqueo de escrituras. `docs/VERIFICACION.md` registra las comprobaciones realizadas y sus límites.
 
-Para actualizarlo, revisa los cambios en una rama o haz commits en `main` desde GitHub o Git local. No contiene backend ni secretos.
+## Publicación
+
+La edición con servidor utiliza el alojamiento declarado en `.openai/hosting.json`, con un Worker y assets estáticos. La edición para GitHub Pages se genera con `npm run export:pages` y mantiene los mismos componentes visuales. La API y futura BBDD requieren desplegar la edición con servidor. Nunca subir `node_modules`, `.env`, claves, `.wrangler`, ni registros de ejecución.
+
+Antes de operar comercialmente: sustituir el contenido ficticio por información verificada, incorporar datos legales y de contacto reales, implementar autenticación/autorización y un canal de contacto, revisar privacidad y condiciones, probar el alta/edición/publicación de vehículos y retirar los avisos demo únicamente de las unidades verificadas.

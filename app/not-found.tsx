@@ -1,0 +1,1 @@
+export default function NotFound() { return <main id="contenido" className="container error-page"><p className="eyebrow">404 · FUERA DE RUTA</p><h1>Esta página no está en el catálogo.</h1><p>Vuelve a la selección de vehículos de ejemplo.</p><a href="/#catalogo" className="button gold">Volver al catálogo →</a></main>; }

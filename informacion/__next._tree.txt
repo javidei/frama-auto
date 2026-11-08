@@ -1,0 +1,2 @@
+:HL["/frama-auto/_next/static/css/fa816fff8fbcb8db.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"informacion","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"gtCh3f4SP3n1ETFcl_ze7"}

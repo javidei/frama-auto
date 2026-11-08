@@ -1,0 +1,2 @@
+import { catalogRepository } from "@/lib/catalog/repository";
+export async function GET(_request: Request, { params }: { params: Promise<{ slug: string }> }) { const vehicle = await catalogRepository.findBySlug((await params).slug); return Response.json(vehicle ? { demo: true, vehicle } : { error: "Vehículo no encontrado" }, { status: vehicle ? 200 : 404, headers: { "Cache-Control": "no-store" } }); }

@@ -1,0 +1,25 @@
+1:"$Sreact.fragment"
+2:I[4090,[],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[4090,[],"ViewportBoundary"]
+8:I[4090,[],"MetadataBoundary"]
+9:I[1663,[],"IconMark"]
+b:I[9075,[],""]
+c:I[4703,[],""]
+f:I[6367,["177","static/chunks/app/layout-1819f64621c15a6b.js"],"Header"]
+10:I[5460,["39","static/chunks/app/error-ab4ff8d02a841e7f.js"],"default"]
+11:I[6367,["177","static/chunks/app/layout-1819f64621c15a6b.js"],"Footer"]
+:HL["/frama-auto/_next/static/css/fa816fff8fbcb8db.css","style"]
+6:X
+e:X
+e:C
+0:{"buildId":"gtCh3f4SP3n1ETFcl_ze7","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"id":"contenido","className":"container error-page","children":[["$","p",null,{"className":"eyebrow","children":"404 · FUERA DE RUTA"}],["$","h1",null,{"children":"Esta página no está en el catálogo."}],["$","p",null,{"children":"Vuelve a la selección de vehículos de ejemplo."}],["$","a",null,{"href":"/frama-auto/#catalogo","className":"button gold","children":"Volver al catálogo →"}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"FRAMA AUTO · Importación y venta de vehículos"}],["$","meta","1",{"name":"description","content":"Catálogo de demostración FRAMA AUTO: vehículos, fichas técnicas y galerías. Todos los vehículos, imágenes y precios son ilustrativos."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/frama-auto/favicon.svg"}],["$","$L9","4",{}]]}]}]}],null]}],"isPartial":"$@a","staleTime":"$6","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"isPartial":"$@d","staleTime":"$6","varyParams":"$e"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/frama-auto/_next/static/css/fa816fff8fbcb8db.css","precedence":"next"}]],["$","html",null,{"lang":"es","children":["$","body",null,{"children":[["$","a",null,{"href":"#contenido","className":"skip-link","children":"Saltar al contenido"}],["$","$Lf",null,{}],["$","$Lb",null,{"parallelRouterKey":"children","error":"$10","errorStyles":[],"errorScripts":null,"template":["$","$Lc",null,{}],"notFound":[["$","main",null,{"id":"contenido","className":"container error-page","children":[["$","p",null,{"className":"eyebrow","children":"404 · FUERA DE RUTA"}],["$","h1",null,{"children":"Esta página no está en el catálogo."}],["$","p",null,{"children":"Vuelve a la selección de vehículos de ejemplo."}],["$","a",null,{"href":"/frama-auto/#catalogo","className":"button gold","children":"Volver al catálogo →"}]]}],[]]}],["$","$L11",null,{}]]}]}]]}],"isPartial":"$@12","staleTime":"$6","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+4:null
+6:300
+14:true
+6:C
+13:0
+a:"$undefined"
+d:"$undefined"
+12:"$undefined"
+5:"$undefined"
