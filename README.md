@@ -92,3 +92,14 @@ La última orden requiere `npm run dev` abierto. Para otro origen, configurar `F
 La edición con servidor utiliza el alojamiento declarado en `.openai/hosting.json`, con un Worker y assets estáticos. La edición para GitHub Pages se genera con `npm run export:pages` y mantiene los mismos componentes visuales. La API y futura BBDD requieren desplegar la edición con servidor. Nunca subir `node_modules`, `.env`, claves, `.wrangler`, ni registros de ejecución.
 
 Antes de operar comercialmente: sustituir el contenido ficticio por información verificada, incorporar datos legales y de contacto reales, implementar autenticación/autorización y un canal de contacto, revisar privacidad y condiciones, probar el alta/edición/publicación de vehículos y retirar los avisos demo únicamente de las unidades verificadas.
+
+
+## Versión 0.1.0 · Administración y contacto
+
+- En el pie aparece **v0.1.0** en lugar del literal «Web de demostración».
+- Botón flotante de WhatsApp con **número ficticio reservado** `+1 202 555 0148` (`components/frama/Shell.tsx` y `public/site-enhancements.js`). El enlace abre WhatsApp, pero este número no recibe conversaciones: sustituirlo por el real antes de operar.
+- Área **/administracion/**, de momento pública y **solo informativa**: backlog de desarrollo para Supabase, autenticación, catálogo administrable y despliegue. No existe inicio de sesión ni edición real desde esa página.
+- Supabase Free puede suspender un proyecto si tiene actividad insuficiente durante un período de siete días. Una visita semanal no garantiza que permanezca activo. Para producción, valorar Pro y copias verificadas. Véase https://supabase.com/docs/guides/platform/free-project-pausing.
+- La web publicada desde GitHub Pages conserva una capa de compatibilidad `site-enhancements.js` hasta que se reconstruya el export de Next.js. No contiene contraseñas, claves ni permisos simulados.
+
+Próxima modificación visible: incrementar la versión a **0.1.1** en el código fuente y los recursos estáticos.
