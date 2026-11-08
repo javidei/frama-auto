@@ -124,8 +124,10 @@ with check ((select frama_internal.is_admin()));
 create policy frama_role_delete on public.frama_user_roles for delete to authenticated
 using ((select frama_internal.is_admin()));
 
-create policy frama_vehicle_read on public.frama_vehicles for select to anon, authenticated
-using (publication_state = 'publicado' or (select frama_internal.is_staff()));
+create policy frama_vehicle_public_read on public.frama_vehicles for select to anon, authenticated
+using (publication_state = 'publicado');
+create policy frama_vehicle_staff_read on public.frama_vehicles for select to authenticated
+using ((select frama_internal.is_staff()));
 create policy frama_vehicle_insert on public.frama_vehicles for insert to authenticated
 with check ((select frama_internal.is_staff()) and created_by = (select auth.uid()));
 create policy frama_vehicle_update on public.frama_vehicles for update to authenticated
@@ -134,11 +136,13 @@ with check ((select frama_internal.is_staff()));
 create policy frama_vehicle_delete on public.frama_vehicles for delete to authenticated
 using ((select frama_internal.is_admin()));
 
-create policy frama_photo_read on public.frama_vehicle_photos for select to anon,authenticated
+create policy frama_photo_public_read on public.frama_vehicle_photos for select to anon,authenticated
 using (exists (
   select 1 from public.frama_vehicles v where v.id = vehicle_id
-    and (v.publication_state = 'publicado' or (select frama_internal.is_staff()))
+    and v.publication_state = 'publicado'
 ));
+create policy frama_photo_staff_read on public.frama_vehicle_photos for select to authenticated
+using ((select frama_internal.is_staff()));
 create policy frama_photo_insert on public.frama_vehicle_photos for insert to authenticated
 with check ((select frama_internal.is_staff()));
 create policy frama_photo_update on public.frama_vehicle_photos for update to authenticated
@@ -152,12 +156,14 @@ insert into storage.buckets(id,name,public,file_size_limit,allowed_mime_types)
 values ('frama-auto-vehiculos','frama-auto-vehiculos',false,12582912,array['image/jpeg','image/png','image/webp'])
 on conflict (id) do nothing;
 
-create policy frama_storage_read on storage.objects for select to anon,authenticated
+create policy frama_storage_public_read on storage.objects for select to anon,authenticated
 using (bucket_id = 'frama-auto-vehiculos' and exists (
   select 1 from public.frama_vehicles v
   where v.id::text = split_part(name,'/',1)
-  and (v.publication_state = 'publicado' or (select frama_internal.is_staff()))
+    and v.publication_state = 'publicado'
 ));
+create policy frama_storage_staff_read on storage.objects for select to authenticated
+using (bucket_id = 'frama-auto-vehiculos' and (select frama_internal.is_staff()));
 create policy frama_storage_insert on storage.objects for insert to authenticated
 with check (bucket_id = 'frama-auto-vehiculos' and (select frama_internal.is_staff())
   and exists (select 1 from public.frama_vehicles v where v.id::text = split_part(name,'/',1)));
