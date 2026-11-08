@@ -1,4 +1,4 @@
-/* FRAMA AUTO v0.1.5 · compatibilidad con export estático de GitHub Pages.
+/* FRAMA AUTO v0.1.6 · compatibilidad con export estático de GitHub Pages.
    El número WhatsApp es ficticio (rango 555 reservado para ejemplos).
    La administración usa Supabase; los datos públicos se consultan con acceso de solo lectura. */
 (() => {
@@ -7,7 +7,7 @@
     const base=location.pathname==="/frama-auto"||location.pathname.startsWith("/frama-auto/")?"/frama-auto":"";
     const script=document.createElement("script");script.src=base+"/pwa-register.js";script.defer=true;document.head.append(script);
   }
-  const VERSION = "0.1.5";
+  const VERSION = "0.1.6";
   const TEST_PHONE = "12025550148";
   const base = location.pathname === "/frama-auto" || location.pathname.startsWith("/frama-auto/") ? "/frama-auto" : "";
   const message = encodeURIComponent("Hola, he visto FRAMA AUTO y quiero información sobre un vehículo.");
@@ -40,7 +40,9 @@
       if (copyright && !copyright.textContent.includes("v" + VERSION)) {
         copyright.textContent = "© " + new Date().getFullYear() + " FRAMA AUTO · v" + VERSION;
       }
-      if (!footer.querySelector(".footer-admin-link")) {
+      const adminLinks = [...footer.querySelectorAll("a[href]")].filter(a => { try { return new URL(a.href, location.href).pathname.replace(/\\/$/, "") === (base + "/administracion"); } catch { return false; } });
+      adminLinks.slice(1).forEach(a => a.remove());
+      if (!adminLinks.length) {
         const anchor = document.createElement("a");
         anchor.className = "footer-admin-link";
         anchor.href = base + "/administracion/";
