@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0b0d0f"/><path d="M18 48V16h31v7H26v7h18v7H26v11z" fill="#d6b36c"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title"><title id="title">FRAMA AUTO</title><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#bd841c"/><stop offset=".25" stop-color="#ffe08b"/><stop offset=".5" stop-color="#d39622"/><stop offset=".78" stop-color="#ffe7a5"/><stop offset="1" stop-color="#a7680c"/></linearGradient><radialGradient id="b"><stop stop-color="#232327"/><stop offset="1" stop-color="#060607"/></radialGradient></defs>
+<rect width="512" height="512" fill="#050506"/><rect x="30" y="30" width="452" height="452" rx="73" fill="url(#b)" stroke="url(#g)" stroke-width="9"/>
+<path d="M60 252 C93 229 127 218 158 219 C203 222 232 229 271 223 C318 214 353 207 392 215 C423 221 443 224 455 219 C430 237 402 236 373 230 C327 221 298 237 263 242 C221 247 197 245 160 238 C120 232 90 243 60 252Z" fill="#f5f5f3"/>
+<path d="M195 210 C225 188 248 171 283 170 C335 170 376 194 416 211 C373 205 345 188 307 184 C264 180 225 193 195 210Z" fill="#fafafa"/>
+<path d="M230 200 L252 189 L268 189 L253 204Z" fill="#fff"/>
+<path d="M230 246 C300 234 353 219 409 232 C431 237 448 235 460 225 L450 249 C422 235 388 237 355 240 C303 243 267 247 230 246Z" fill="url(#g)"/>
+<text x="55" y="329" font-family="Arial,Helvetica,sans-serif" font-size="68" font-weight="900" font-style="italic" letter-spacing="-4" fill="#fff">FRAMA</text>
+<text x="271" y="329" font-family="Arial,Helvetica,sans-serif" font-size="65" font-weight="900" font-style="italic" letter-spacing="-4" fill="url(#g)">AUTO</text>
+<path d="M83 357H233L226 363H83ZM278 357H428L438 363H276Z" fill="url(#g)"/></svg>

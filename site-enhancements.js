@@ -3,6 +3,10 @@
    No hay login, escrituras administrativas ni conexión a base de datos. */
 (() => {
   "use strict";
+  if(!document.querySelector('script[src$="/pwa-register.js"]')){
+    const base=location.pathname==="/frama-auto"||location.pathname.startsWith("/frama-auto/")?"/frama-auto":"";
+    const script=document.createElement("script");script.src=base+"/pwa-register.js";script.defer=true;document.head.append(script);
+  }
   const VERSION = "0.1.2";
   const TEST_PHONE = "12025550148";
   const base = location.pathname === "/frama-auto" || location.pathname.startsWith("/frama-auto/") ? "/frama-auto" : "";

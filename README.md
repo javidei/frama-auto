@@ -120,3 +120,7 @@ Próxima modificación visible: incrementar la versión a **0.1.3** en el códig
 - Sin año ni precio inventados. Los atributos proceden del texto facilitado para el anuncio, no de una auditoría independiente.
 - Compatibilidad con galerías de fotografías individuales y antiguos mosaicos ilustrativos.
 - La publicación actual de GitHub Pages usa un script de compatibilidad en portada y un HTML estático para la nueva ficha; el siguiente `npm run export:pages` generará esa ruta a partir de Next.js.
+
+## Aplicación PWA instalable
+
+La web se puede instalar como aplicación desde Chrome en Android o mediante «Añadir a pantalla de inicio» en iOS. No es una APK ni una aplicación distribuida en tiendas. Incluye manifest, iconos FRAMA AUTO, registro de service worker y caché mínima para la portada visitada. Los datos del catálogo no están sincronizados para uso sin conexión. Los archivos fuente están en `public/` y en `app/layout.tsx`; la publicación Pages se sirve desde la raíz.

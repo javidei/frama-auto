@@ -22,7 +22,7 @@ writeFileSync(path.join(stage, 'tsconfig.json'), JSON.stringify({compilerOptions
 
 // Plain anchors and public assets require an explicit repository prefix on GitHub Pages.
 function prefix(content) {
-  return content.replace(/(["'`])\/(images\/|vehiculos\/|#|\?|informacion|administracion|favicon\.svg)/g, (_, quote, suffix) => `${quote}${basePath}/${suffix}`)
+  return content.replace(/(["'`])\/(images\/|icons\/|vehiculos\/|#|\?|informacion|administracion|favicon\.svg|manifest\.webmanifest|pwa-register\.js|sw\.js)/g, (_, quote, suffix) => `${quote}${basePath}/${suffix}`)
     .replace(/(["'`])\/\1/g, (_, quote) => `${quote}${basePath}/${quote}`);
 }
 function walk(dir, callback) { for (const name of readdirSync(dir)) { const file=path.join(dir,name); if(statSync(file).isDirectory()) walk(file,callback); else callback(file); } }
