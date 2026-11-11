@@ -68,7 +68,7 @@ el("fa-login").onsubmit=async ev=>{ev.preventDefault();const f=ev.currentTarget,
 async function enter(){try{user=await authUser();const list=await req("frama_staff?select=role,active&user_id=eq."+encodeURIComponent(user.id)+"&limit=1");role=list[0]&&list[0].active?list[0].role:null;if(!role){shell('<div class="fa-card">Esta cuenta no tiene permisos de FRAMA AUTO. <button id="fa-out" class="fa-secondary">Cerrar sesión</button></div>');el("fa-out").onclick=logout;return;}await showList();}catch(err){clearSession();login();msg("Inicia sesión de nuevo: "+err.message,true);}}
 async function logout(){try{if(token)await fetch(API+"/auth/v1/logout",{method:"POST",headers:fetchHeaders(true)});}catch(_e){}clearSession();gallery.forEach(p=>{if(p.preview)URL.revokeObjectURL(p.preview);});gallery=[];login();}
 async function showList(){editing=null;gallery.forEach(p=>{if(p.preview)URL.revokeObjectURL(p.preview);});gallery=[];try{vehicles=await req("frama_vehicles?select=id,slug,brand,model,trim,year,mileage,commercial_status,publication_status,is_demo&order=created_at.desc");}catch(err){shell('<div class="fa-card">No se ha podido consultar el catálogo. <button id="fa-out" class="fa-secondary">Cerrar sesión</button></div>');el("fa-out").onclick=logout;msg(err.message,true);return;}
-shell('<div class="fa-toolbar"><button id="fa-new" class="fa-primary">+ Añadir nuevo vehículo</button><button id="fa-reload" class="fa-secondary">Actualizar listado</button><button id="fa-settings" class="fa-secondary">Contacto y redes</button><button id="fa-out" class="fa-quiet">Cerrar sesión</button></div><div class="fa-card"><h3>Vehículos registrados ('+vehicles.length+')</h3><div class="fa-list">'+(vehicles.map(v=>'<article class="fa-item"><div><strong>'+h(v.brand+" "+v.model+" "+(v.trim||""))+'</strong><small>'+h(v.year||"Año pendiente")+' · '+h(v.mileage==null?"Kilometraje pendiente":Number(v.mileage).toLocaleString("es-ES")+" km")+' · '+h(v.is_demo?"DEMO":v.commercial_status.replace("_"," "))+' · '+h(v.publication_status==="published"?"Publicado":v.publication_status==="draft"?"Borrador":"Archivado")+'</small></div><button class="fa-secondary fa-edit" data-id="'+h(v.id)+'">Editar vehículo</button></article>').join("")||'<p>No hay vehículos.</p>')+'</div></div><p class="fa-note">Los cambios se guardan en Supabase. Los vehículos no demo que estén Publicados se muestran desde Supabase en el catálogo público. Borradores y archivados no se muestran.</p>');
+shell('<div class="fa-toolbar"><button id="fa-new" class="fa-primary">+ Añadir nuevo vehículo</button><button id="fa-reload" class="fa-secondary">Actualizar listado</button><button id="fa-settings" class="fa-secondary">Redes y WhatsApp</button><button id="fa-out" class="fa-quiet">Cerrar sesión</button></div><div class="fa-card"><h3>Vehículos registrados ('+vehicles.length+')</h3><div class="fa-list">'+(vehicles.map(v=>'<article class="fa-item"><div><strong>'+h(v.brand+" "+v.model+" "+(v.trim||""))+'</strong><small>'+h(v.year||"Año pendiente")+' · '+h(v.mileage==null?"Kilometraje pendiente":Number(v.mileage).toLocaleString("es-ES")+" km")+' · '+h(v.is_demo?"DEMO":v.commercial_status.replace("_"," "))+' · '+h(v.publication_status==="published"?"Publicado":v.publication_status==="draft"?"Borrador":"Archivado")+'</small></div><button class="fa-secondary fa-edit" data-id="'+h(v.id)+'">Editar vehículo</button></article>').join("")||'<p>No hay vehículos.</p>')+'</div></div><p class="fa-note">Los cambios se guardan en Supabase. Los vehículos no demo que estén Publicados se muestran desde Supabase en el catálogo público. Borradores y archivados no se muestran.</p>');
 el("fa-new").onclick=()=>editForm(null);el("fa-reload").onclick=showList;el("fa-settings").onclick=showContactSettings;el("fa-out").onclick=logout;root.querySelectorAll(".fa-edit").forEach(b=>b.onclick=()=>loadVehicle(b.dataset.id));
 }
 
@@ -79,8 +79,7 @@ async function showContactSettings(){
     const settings=rows[0];
     if(!settings)throw new Error("No se han encontrado los ajustes.");
     shell('<div class="fa-toolbar"><button class="fa-secondary" id="fa-settings-back">← Volver a vehículos</button><button class="fa-quiet" id="fa-out">Cerrar sesión</button></div>'
-      +'<form id="fa-contact-settings" class="fa-card"><h3>Contacto y redes sociales</h3><p>Estos ajustes se guardan en Supabase y se muestran automáticamente en la web pública. El envío automático requiere configurar RESEND_API_KEY y FRAMA_FROM_EMAIL en los secretos de Supabase.</p>'
-      +'<label>Correo que recibe las consultas<input type="email" name="email" required maxlength="180" value="'+h(settings.email||"")+'"></label>'
+      +'<form id="fa-contact-settings" class="fa-card"><h3>Redes y WhatsApp sociales</h3><p>Estos ajustes se guardan en Supabase y se muestran automáticamente en la web pública. El envío automático requiere configurar RESEND_API_KEY y FRAMA_FROM_EMAIL en los secretos de Supabase.</p>'
       +'<label>WhatsApp internacional (ejemplo: +34600111222)<input type="tel" name="whatsapp" maxlength="16" placeholder="+34600111222" value="'+h(settings.whatsapp||"")+'"></label>'
       +'<label>Instagram (URL del perfil)<input type="url" name="instagram_url" maxlength="400" placeholder="https://www.instagram.com/usuario/" value="'+h(settings.instagram_url||"")+'"></label>'
       +'<label>Facebook (URL de la página)<input type="url" name="facebook_url" maxlength="400" placeholder="https://www.facebook.com/pagina/" value="'+h(settings.facebook_url||"")+'"></label>'
@@ -90,14 +89,14 @@ async function showContactSettings(){
     el("fa-contact-settings").onsubmit=async event=>{
       event.preventDefault();
       const form=event.currentTarget,submit=el("fa-settings-save");
-      const email=form.elements.email.value.trim(),whatsapp=form.elements.whatsapp.value.trim().replace(/[\s()-]/g,"");
+      const whatsapp=form.elements.whatsapp.value.trim().replace(/[\s()-]/g,"");
       const instagram_url=form.elements.instagram_url.value.trim(),facebook_url=form.elements.facebook_url.value.trim();
       if(whatsapp&&!/^\+[1-9]\d{7,14}$/.test(whatsapp)){msg("El número de WhatsApp debe empezar por + y contener el prefijo de país.",true);return;}
       if(instagram_url&&!/^https:\/\/(www\.)?instagram\.com\//i.test(instagram_url)){msg("Utiliza una URL de Instagram válida.",true);return;}
       if(facebook_url&&!/^https:\/\/(www\.)?facebook\.com\//i.test(facebook_url)){msg("Utiliza una URL de Facebook válida.",true);return;}
       submit.disabled=true;msg("Guardando configuración…");
       try {
-        await req("frama_contact_settings?id=eq.1","PATCH",{email,whatsapp,instagram_url,facebook_url,updated_at:new Date().toISOString()});
+        await req("frama_contact_settings?id=eq.1","PATCH",{whatsapp,instagram_url,facebook_url,updated_at:new Date().toISOString()});
         msg("Configuración de contacto guardada. La web pública la cargará automáticamente.");
       }catch(error){msg("No se ha guardado: "+error.message,true);}
       finally{submit.disabled=false;}
