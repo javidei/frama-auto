@@ -1,5 +1,5 @@
 /* FRAMA AUTO v0.1.6: red primero, sin HTML obsoleto en navegacion. */
-const CACHE = "frama-auto-pwa-v2";
+const CACHE = "frama-auto-pwa-v3";
 const BASE = new URL("./", self.location.href).pathname;
 const CORE = [BASE+"manifest.webmanifest",BASE+"icons/app-192.svg",BASE+"icons/app-512.svg"];
 self.addEventListener("install", event => {
