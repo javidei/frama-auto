@@ -79,7 +79,7 @@ async function showContactSettings(){
     const settings=rows[0];
     if(!settings)throw new Error("No se han encontrado los ajustes.");
     shell('<div class="fa-toolbar"><button class="fa-secondary" id="fa-settings-back">← Volver a vehículos</button><button class="fa-quiet" id="fa-out">Cerrar sesión</button></div>'
-      +'<form id="fa-contact-settings" class="fa-card"><h3>Redes y WhatsApp sociales</h3><p>Estos ajustes se guardan en Supabase y se muestran automáticamente en la web pública. El envío automático requiere configurar RESEND_API_KEY y FRAMA_FROM_EMAIL en los secretos de Supabase.</p>'
+      +'<form id="fa-contact-settings" class="fa-card"><h3>Redes y WhatsApp</h3><p>Estos ajustes se guardan en Supabase y se muestran automáticamente en la web pública. No existe formulario de consultas por correo.</p>'
       +'<label>WhatsApp internacional (ejemplo: +34600111222)<input type="tel" name="whatsapp" maxlength="16" placeholder="+34600111222" value="'+h(settings.whatsapp||"")+'"></label>'
       +'<label>Instagram (URL del perfil)<input type="url" name="instagram_url" maxlength="400" placeholder="https://www.instagram.com/usuario/" value="'+h(settings.instagram_url||"")+'"></label>'
       +'<label>Facebook (URL de la página)<input type="url" name="facebook_url" maxlength="400" placeholder="https://www.facebook.com/pagina/" value="'+h(settings.facebook_url||"")+'"></label>'
